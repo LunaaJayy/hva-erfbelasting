@@ -1,0 +1,16 @@
+:root {
+    color-scheme: light dark;
+
+    /* --ns-blauw:light-dark(#003082); */
+    --ns-text-blue: #003082;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2 {
+    color: var(--ns-text-blue);
+}

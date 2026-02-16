@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aangifte erfbelasting - OPDRACHT VOOR STUDIE</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Aangifte erfbelasting</h1>
+        <p>Dit is een een project voor studie!</p>
+    </header>
+    <main>
+        <h2>1 Gegevens van de overledene</h2>
+        <p>vul hier de gegevens in van de overledene</p>
+        <form> <!-- voor alle input types en attributen in de form: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -->
+            <fieldset> <!-- 1a -->
+                <legend>Persoonsgegevens van overledene</legend>
+                <label for="1a-1">Voorletter(s)</label>
+                <input type="text" name="voorletter(s)" id="1a-1">
+
+                <label for="1a-2">Tussenvoegsel(s)</label>
+                <input type="text" name="tussenvoegsel(s)" id="1a-2">
+
+                <label for="1a-3">Achternaam</label>
+                <input type="text" name="achternaam" id="1a-3">
+
+                <label for="1a-4">Bsn overledene</label>
+                <input type="text" name="bsn-overledene" id="1a-4" minlength="9" maxlength="9" pattern="[0-9]">
+
+                <label for="1a-5">overlijdensdatum</label>
+                <input type="date" name="overlijdensdatum" id="1a-5">
+            </fieldset>
+
+            <fieldset> <!-- 1b -->
+                <legend>Partnerschap van overledene</legend>
+                <fieldset>
+                    <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
+                    <label for="1b-1-ja">Ja</label>
+                    <input type="radio" name="overledene-getrouwd" id="1b-1-ja">
+
+                    <label for="1b-1-nee">Nee</label>
+                    <input type="radio" name="overledene-getrouwd" id="1b-1-nee">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partner­schapsvoorwaarden laten vast­ leggen in een notariële akte?</legend>
+                    <label for="1b-2-ja">Ja</label>
+                    <input type="radio" name="geregistr-partner" id="1b-2-ja">
+
+                    <label for="1b-2-nee">Nee</label>
+                    <input type="radio" name="geregistr-partner" id="1b-2-nee">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
+                    <label for="1b-3-ja">Ja</label>
+                    <input type="radio" name="verrekenbeding" id="1b-3-ja">
+
+                    <label for="1b-3-nee">Nee</label>
+                    <input type="radio" name="verrekenbeding" id="1b-3-nee">
+                </fieldset>
+
+                <label for="1b-4">Datum huwelijkse of partnerschapsvoorwaarden</label>
+                <input type="date" name="datum-huwelijk" id="1b-4">
+            </fieldset>
+
+            <fieldset> <!-- 1c -->
+                <legend>Kinderen van overledene</legend>
+
+                <fieldset>
+                    <legend>Had de overledene kinderen?</legend>
+                    <label for="1c-1-ja">Ja</label>
+                    <input type="radio" name="kinderen" id="1c-1-ja">
+
+                    <label for="1c-1-nee">Nee</label>
+                    <input type="radio" name="kinderen" id="1c-1-nee">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>
+                    <label for="1c-2-ja">Ja</label>
+                    <input type="radio" name="kinderen-overleden" id="1c-2-ja">
+
+                    <label for="1c-2-nee">Nee</label>
+                    <input type="radio" name="kinderen-overleden" id="1c-2-nee">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Had dit overleden kind zelf kinderen?</legend>
+                    <label for="1c-3-ja">Ja</label>
+                    <input type="radio" name="kind-overleden-kind" id="1c-3-ja">
+
+                    <label for="1c-3-nee">Nee</label>
+                    <input type="radio" name="kind-overleden-kind" id="1c-3-nee">
+                </fieldset>
+            </fieldset>
+
+            <fieldset> <!-- 1d -->
+                <legend>Testament overledene</legend> 
+
+                <fieldset>
+                   <legend>Had de overledene een testament?</legend>
+                    <label for="1d-1-ja">Ja</label>
+                    <input type="radio" name="testament" id="1d-1-ja">
+
+                    <label for="1d-1-nee">Nee</label>
+                    <input type="radio" name="testament" id="1d-1-nee"> 
+                </fieldset>
+
+                <label for="1d-2">Protocolnummer notaris</label>
+                <input type="text" name="protocolnummer" id="1d-2" minlength="6" maxlength="6" pattern="[0-9]">
+
+                <label for="1d-3">Voorletter(s)</label>
+                <input type="text" name="voorletter-notaris" id="1d-3">
+
+                <label for="1d-4">Tussenvoegsel(s)</label>
+                <input type="text" name="tussenvoegsel-notaris" id="1d-4">
+
+                <label for="1d-5">Achternaam</label>
+                <input type="text" name="achternaam-notaris" id="1d-5">
+
+                <label for="1d-6">Vestigingsplaats</label>
+                <input type="text" name="vestigingsplaats" id="1d-6">
+
+                <label for="1d-7">Datum van het testament of van de laatste wijziging</label>
+                <input type="date" name="datum-testament" id="1d-7">
+            </fieldset>
+        </form>        
+    </main>  
+</body>
+</html>
