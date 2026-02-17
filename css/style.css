@@ -125,4 +125,5 @@ input {
     border: var(--input-color) 1px solid;
     border-radius: 6px;
     padding: .5em;
+    font-family: 'NS Sans', 'Roboto', sans-serif;
 }
