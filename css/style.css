@@ -1,21 +1,128 @@
 :root {
     color-scheme: light dark;
 
-    /* --ns-blauw:light-dark(#003082); */
-    --ns-text-blue: #003082;
+    /* 
+    --ns-display-blue:light-dark(#003082, #);
+    --text-color:light-dark(#000000, # );
+    --light-color-blue:light-dark(#0063D3 #);
+    --input-color:light-dark(#C4C5CB, # );
+    --fieldset-color:light-dark(#EAEBEE, # );
+    --bg-color-header:light-dark(#FFC917, # );
+    --bg-color-main: light-dark(#E6E6E9, # );
+    */
+
+    --display-blue: #003082;
+    --text-color: #000000;
+    --light-color-blue: #0063D3;
+    --input-color: #C4C5CB;
+    --fieldset-color: #EAEBEE;
+    --bg-color-header: #FFC917;
+    --bg-color-main: #FFFFFF;
 
 }
 
 @font-face {
-    font-family: 'NSsans';
-    src: url(../.gitignore/nssans-regular.woff2);
+    font-family: 'NS Sans';
+    src: url(../fonts/nssans-regular.woff2);
+    /* font-weight: normal; */
+}
+
+@font-face {
+    font-family: 'NS Sans';
+    src: url(../fonts/nssans-bold.woff2);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'NS Sans';
+    src: url(../fonts/nssans-italic.woff2);
+    font-style: italic;
 }
 
 body {
-    font-family: 'NSsans', 'Roboto', sans-serif;
+    margin: 0;
+    font-family: 'NS Sans', 'Roboto', sans-serif;
     font-size: 16px;
 }
 
 h1, h2 {
-    color: var(--ns-text-blue);
+    color: var(--display-blue);
+    margin: 0;
+    font-size: 35px;
+}
+
+
+header {
+    margin: 0;
+    padding: 1em;
+
+    /* letterlijk overgenomen van NS website: */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03), 0 10px 20px rgba(0, 0, 0, 0.04);
+    background-color: var(--bg-color-header);
+
+    p {
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    }
+}
+
+main {
+    background-color: var(--bg-color-main);
+    padding-top: 2em;
+
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: normal;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    p {
+        font-style: italic;
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+
+    }
+}
+
+form {
+    margin: 0.75em;
+
+    &>fieldset{
+        margin-bottom: 1em;
+        padding: 0.75em;
+        border-radius: 0.75em;
+
+        /* letterlijk overgenomen van NS website: */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .03), 0 4px 8px rgba(0, 0, 0, .03), 0 8px 16px rgba(0, 0, 0, .03), 0 0 0 1px var(--fieldset-color);
+    }
+}
+
+
+fieldset{
+    border: none;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+form>fieldset>legend {
+    color: var(--display-blue);
+    font-weight: bold;
+
+    float: left;
+}
+
+label {
+    margin-top: 1em;
+}
+
+input {
+    border: var(--input-color) 1px solid;
+    border-radius: 6px;
+    padding: .5em;
 }
