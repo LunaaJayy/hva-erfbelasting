@@ -18,23 +18,23 @@
     <main>
         <h2>1 Gegevens van de overledene</h2>
         <p>vul hier de gegevens in van de overledene</p>
-        <form> <!-- voor alle input types en attributen in de form: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -->
+        <form method="post"> <!-- voor alle input types en attributen in de form: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -->
             <fieldset> <!-- 1a -->
                 <legend>Persoonsgegevens van overledene</legend>
                 <label for="1a-1">Voorletter(s)</label>
-                <input type="text" name="voorletter(s)" id="1a-1">
+                <input type="text" name="voorletter(s)" id="1a-1" required>
 
                 <label for="1a-2">Tussenvoegsel(s)</label>
                 <input type="text" name="tussenvoegsel(s)" id="1a-2">
 
                 <label for="1a-3">Achternaam</label>
-                <input type="text" name="achternaam" id="1a-3">
+                <input type="text" name="achternaam" id="1a-3" required>
 
                 <label for="1a-4">Bsn overledene</label>
-                <input type="text" name="bsn-overledene" id="1a-4" minlength="9" maxlength="9" pattern="[0-9]">
+                <input type="text" name="bsn-overledene" id="1a-4" maxlength="9" pattern="[0-9]{9}" required>
 
                 <label for="1a-5">overlijdensdatum</label>
-                <input type="date" name="overlijdensdatum" id="1a-5">
+                <input type="date" name="overlijdensdatum" id="1a-5" required>
             </fieldset>
 
             <fieldset> <!-- 1b -->
@@ -42,10 +42,10 @@
                 <fieldset>
                     <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
                     <label for="1b-1-ja">Ja</label>
-                    <input type="radio" name="overledene-getrouwd" id="1b-1-ja">
+                    <input type="radio" name="overledene-getrouwd" id="1b-1-ja" required>
 
                     <label for="1b-1-nee">Nee</label>
-                    <input type="radio" name="overledene-getrouwd" id="1b-1-nee">
+                    <input type="radio" name="overledene-getrouwd" id="1b-1-nee" required>
                 </fieldset>
 
                 <fieldset>
@@ -76,10 +76,10 @@
                 <fieldset>
                     <legend>Had de overledene kinderen?</legend>
                     <label for="1c-1-ja">Ja</label>
-                    <input type="radio" name="kinderen" id="1c-1-ja">
+                    <input type="radio" name="kinderen" id="1c-1-ja" required>
 
                     <label for="1c-1-nee">Nee</label>
-                    <input type="radio" name="kinderen" id="1c-1-nee">
+                    <input type="radio" name="kinderen" id="1c-1-nee" required>
                 </fieldset>
 
                 <fieldset>
@@ -107,14 +107,14 @@
                 <fieldset>
                    <legend>Had de overledene een testament?</legend>
                     <label for="1d-1-ja">Ja</label>
-                    <input type="radio" name="testament" id="1d-1-ja">
+                    <input type="radio" name="testament" id="1d-1-ja" required>
 
                     <label for="1d-1-nee">Nee</label>
-                    <input type="radio" name="testament" id="1d-1-nee"> 
+                    <input type="radio" name="testament" id="1d-1-nee" required> 
                 </fieldset>
 
                 <label for="1d-2">Protocolnummer notaris</label>
-                <input type="text" name="protocolnummer" id="1d-2" minlength="6" maxlength="6" pattern="[0-9]">
+                <input type="text" name="protocolnummer" id="1d-2" maxlength="6" pattern="[0-9]{6}">
 
                 <label for="1d-3">Voorletter(s)</label>
                 <input type="text" name="voorletter-notaris" id="1d-3">
@@ -131,7 +131,85 @@
                 <label for="1d-7">Datum van het testament of van de laatste wijziging</label>
                 <input type="date" name="datum-testament" id="1d-7">
             </fieldset>
-        </form>        
+            <button type="submit">Volgende</button>
+        </form> 
+        
+        <h2>2 Gegevens gemachtigde</h2>
+        <p>Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of meerdere personen en/of instellingen aangifte doet. Het invullen van een telefoonnummer of e-mailadres is niet verplicht, maar wel handig. Dan kunnen wij u makkelijker vragen stellen of uitleg geven.</p>
+        <form method="post">
+            <fieldset> <!--2a-->
+                <legend>Vul 1 van de 3 in</legend>
+                
+                <label for="2a-1">Bsn/RSIN gemachtigde</label>
+                <input type="text" name="bsn-gemachtigde" id="2a-1" maxlength="9" pattern="[0-9]{9}">
+
+                <label for="2a-2">Beconnummer adviseur</label>
+                <input type="text" name="beconnummer" id="2a-2" maxlength="6" pattern="[0-9]{6}">
+
+                <label for="2a-3">Protocolnummer notaris</label>
+                <input type="text" name="protocolnummer" id="2a-3" maxlength="6" pattern="[0-9]{6}">
+            </fieldset>
+
+            <fieldset>
+                <legend>Persoonsgegevens van gemachtigde</legend>
+
+                <label for="2b-1">Voorletter(s)</label>
+                <input type="text" name="voorletter(s)" id="2b-1" required>
+
+                <label for="2b-2">Tussenvoegsel(s)</label>
+                <input type="text" name="tussenvoegsel(s)" id="2b-2">
+
+                <label for="2b-3">Achternaam</label>
+                <input type="text" name="achternaam" id="2b-3" required>
+
+                <label for="2b-4">Naam instelling (bijvoorbeeld een notariskantoor)</label>
+                <input type="text" name="naam-instelling" id="2b-4">
+
+                <fieldset>
+                    <legend>Adres in Nederland</legend>
+
+                    <label for="2b-nl-1">Straat</label>
+                    <input type="text" name="straat-nl" id="2b-nl-1">
+
+                    <label for="2b-nl-2">Huisnummer</label>
+                    <input type="text" name="huisnummer-nl" id="2b-nl-2" pattern="[0-9]">
+
+                    <label for="2b-nl-3">Toevoeging</label>
+                    <input type="text" name="toevoeging-nl" id="2b-nl-3">
+
+                    <label for="2b-nl-4">Postcode</label>
+                    <input type="text" name="postcode-nl" id="2b-nl-4" pattern="[0-9]{4}[A-Za-z]{2}">
+
+                    <label for="2b-nl-5">Plaats</label>
+                    <input type="text" name="plaats-nl" id="2b-nl-5">
+                </fieldset>
+                <fieldset>
+                    <legend>Adres in Buitenland</legend>
+
+                    <label for="2b-bu-1">Straat</label>
+                    <input type="text" name="straat-bu" id="2b-bu-1">
+
+                    <label for="2b-bu-2">Huisnummer</label>
+                    <input type="text" name="huisnummer-bu" id="2b-bu-2">
+
+                    <label for="2b-bu-4">Postcode</label>
+                    <input type="text" name="postcode-bu" id="2b-bu-4" minlength="2">
+
+                    <label for="2b-bu-5">Plaats</label>
+                    <input type="text" name="plaats-bu" id="2b-bu-5">
+
+                    <label for="2b-bu-6">Landcode</label>
+                    <input type="text" name="landcode" id="2b-bu-6" maxlength="3" pattern="[A-Z]{3}">
+                </fieldset>
+
+                <label for="2b-5">Telefoonnummer</label>
+                <input type="text" name="tel-nummer" id="2b-5" minlength="9" maxlength="12">
+
+                <label for="2b-6">E-mailadres</label>
+                <input type="email" name="mail" id="2b-6">
+            </fieldset>
+            <button type="submit">Volgende</button>
+        </form>
     </main>  
 </body>
 </html>
