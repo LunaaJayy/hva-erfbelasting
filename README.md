@@ -46,3 +46,24 @@ Ik vind het ook leuk dat ik alweer veel meer kennis heb over forms dan dat ik vo
 
 In week 2 ben ik dan ook van plan om zo door te blijven gaan. Ik wil zelf meer uitzoeken over forms en diens styling, maar daarbij ook veel workshops bijwonen. Ik wil graag de échte basis van de css afhebben zodat ik door kan gaan met :valid of :invalid qua styling in de css.
  
+
+ feedback
+ - pas op voor dat de balken niet te lang worden (dus met maxwidth)
+ - kijk naar float left of dat anders kan --> 
+ - begin met css met dingen open klappen (geen js)
+ - zsm met de moeilijke dingen beginnen -> dus die moeilijke dingen als eerst doen van dingen openklallen
+
+ ## Week 2
+ ### Dag 3 - Maandag 2 maart, met Eva
+
+**Wat heb ik vandaag gedaan?** \
+Ik heb even goed opgestart na de vakantie. Vervolgens heb ik ervoor gezorgd dat, als je op een vraag drukt, er andere vragen tevoorschijn komen. Ik wist niet zo goed hoe het moest, dus heb het even op een blaadje uitgetekend en ik wist meteen hoe het moest daarna. Vervolgens heb ik Iris geholpen met haar dingetje om het werkend te krijgen. Dat duurde ook even. Als laatste heb ik ook de artikels voor de Weekly Geek gelezen.
+
+**Hoeveel tijd heeft me dat gekost?**\
+Ik heb aan dat van Iris ongeveer een uur gezeten. De rest van de dingen heb ik de rest van de dag aan gezeten. 
+
+**Wat heb ik geleerd?**\
+Ik heb vandaag meer geleerd over CSS selectors, hoe raar dat ook klinkt. Ik heb mij meer verdiept in :has() en verder ook meer geleerd over de attributen hoe de radio buttons en checkboxen het werkbaar maken. 
+
+**Wat ga ik morgen doen?**\
+Het valideren wil ik morgen verder uitwerken en daarna verder gaan aan de vormgeving. Verder wil ik kijken of ik 'required' toe kan voegen aan inputs als die tevoorschijn komen.

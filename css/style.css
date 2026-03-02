@@ -127,3 +127,20 @@ input {
     padding: .5em;
     font-family: 'NS Sans', 'Roboto', sans-serif;
 }
+
+
+/* MARK: IN/UIT KLAP
+ */
+
+ .dichtevraag {
+    display: none
+ }
+
+form fieldset:has(.fieldset-ja:checked) + fieldset {
+    display: flex;
+}
+
+form fieldset:has(.ja:checked) + div {
+    display: block;
+}
+
