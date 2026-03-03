@@ -144,6 +144,10 @@ fieldset:has(.ja:checked) + div {
     display: block;
 }
 
+/* fieldset:has(.js-nee:checked) .dichtevraag {
+    display: none;
+} */
+
 .adresnl, .adresbl {
     display: none;
 }

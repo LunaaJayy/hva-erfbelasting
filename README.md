@@ -67,3 +67,22 @@ Ik heb vandaag meer geleerd over CSS selectors, hoe raar dat ook klinkt. Ik heb 
 
 **Wat ga ik morgen doen?**\
 Het valideren wil ik morgen verder uitwerken en daarna verder gaan aan de vormgeving. Verder wil ik kijken of ik 'required' toe kan voegen aan inputs als die tevoorschijn komen.
+
+### Dag 4 - Dinsdag 3 maart, met 
+**Wat heb ik vandaag gedaan?** \
+Vandaag heb ik ervoor gezorgd dat required wordt toegevoegd, maar ook weer wordt weggehaald als er op bepaalde radio buttons wordt geklikt. Dit was nog best wel een uitzoekwerk, aangezien ik geen idee had waar ik moest beginnen. Verder heb ik geprobeerd de hele vraag te laten inklappen, als je op de eerste vraag meteen al op 'nee' klikt, dit is mij half gelukt, alleen wil ik nu aan de eerste vragen een class toevoegen om het even wat makkelijker te maken. Dit gaat mij ook helpen bij het volledig afmaken van required, het plan heb ik al opgeschreven in mijn boekje.
+Als laatste ben ik begonnen aan mijn plan voor de validatie.
+
+**Hoeveel tijd heeft me dat gekost?**\
+Het ervoor zorgen dat required werkt heeft ruim 3 uur geduurd, omdat daar ook zoekwerk van tevoren bij kwam kijken. Verder duurde het uitvogelen van het volledig inklappen mij een half uur. 
+
+**Wat heb ik geleerd?**\
+Ik heb geleerd over de attributen geven bij JavaScript maar ook over de verschillende eventListeners en over het selecteren van bepaalde elementen in JavaScript (closest, parentElement, ...)
+
+**Wat ga ik morgen doen?**\
+Volgende keer ga ik de puntjes op de i zetten van het toevoegen van required, en beginnen met het valideren. 
+
+
+## Bronnen
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
+- https://chatgpt.com/share/69a6d76a-2e24-8012-8be7-1e7a783916b5
