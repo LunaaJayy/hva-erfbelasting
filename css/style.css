@@ -136,11 +136,22 @@ input {
     display: none
  }
 
-form fieldset:has(.fieldset-ja:checked) + fieldset {
+fieldset:has(.fieldset-ja:checked) + fieldset {
     display: flex;
 }
 
-form fieldset:has(.ja:checked) + div {
+fieldset:has(.ja:checked) + div {
     display: block;
 }
 
+.adresnl, .adresbl {
+    display: none;
+}
+
+fieldset:has(.nl:checked) .adresnl {
+    display: flex;
+}
+
+fieldset:has(.bl:checked) .adresbl {
+    display: flex;
+}

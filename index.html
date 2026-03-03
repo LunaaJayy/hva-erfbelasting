@@ -43,12 +43,12 @@
                 <fieldset>
                     <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
                     <label>
-                        <input type="radio" name="overledene-getrouwd" class="fieldset-ja" required>
+                        <input type="radio" name="overledene-getrouwd" class="fieldset-ja js-ja" required>
                         Ja
                     </label>
 
                     <label>
-                        <input type="radio" name="overledene-getrouwd" required>    
+                        <input type="radio" name="overledene-getrouwd" class="js-nee" required>    
                         Nee
                     </label>
                 </fieldset>
@@ -56,12 +56,12 @@
                 <fieldset class="dichtevraag">
                     <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partner­schapsvoorwaarden laten vast­ leggen in een notariële akte?</legend>
                     <label>
-                        <input type="radio" name="geregistr-partner" class="ja">
+                        <input type="radio" name="geregistr-partner" class="ja js-ja" data-required="true">
                         Ja
                     </label>
 
                     <label>
-                        <input type="radio" name="geregistr-partner">
+                        <input type="radio" name="geregistr-partner" class="js-nee" data-required="true">
                         Nee
                     </label>
                 </fieldset>
@@ -70,19 +70,19 @@
                     <fieldset>
                         <legend>Hadden de overledene en diens partner een finaal verrekenbeding?</legend>
                         <label>
-                            <input type="radio" name="verrekenbeding">
+                            <input type="radio" name="verrekenbeding" data-required="true">
                             Ja
                         </label>
                 
                         <label>
-                            <input type="radio" name="verrekenbeding">
+                            <input type="radio" name="verrekenbeding" data-required="true">
                             Nee
                         </label>
                     </fieldset>
                 
 
                     <label for="1b-4">Datum huwelijkse of partnerschapsvoorwaarden</label>
-                    <input type="date" name="datum-huwelijk" id="1b-4">
+                    <input type="date" name="datum-huwelijk" id="1b-4" data-required="true">
                 </div>
             </fieldset>
 
@@ -92,11 +92,11 @@
                 <fieldset>
                     <legend>Had de overledene kinderen?</legend>                   
                     <label>
-                        <input type="radio" name="kinderen" class="fieldset-ja" required>                   
+                        <input type="radio" name="kinderen" class="fieldset-ja js-ja" required>                   
                         Ja
                     </label>
                     <label>
-                        <input type="radio" name="kinderen" required>
+                        <input type="radio" name="kinderen" class="js-nee" required>
                         Nee
                     </label>
                 </fieldset>
@@ -104,12 +104,12 @@
                 <fieldset class="dichtevraag">
                     <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>                                       
                     <label>
-                        <input type="radio" name="kinderen-overleden" class="fieldset-ja">
+                        <input type="radio" name="kinderen-overleden" class="fieldset-ja js-ja" data-required="true">
                         Ja
                     </label>
 
                     <label>
-                        <input type="radio" name="kinderen-overleden">                    
+                        <input type="radio" name="kinderen-overleden" class="js-nee" data-required="true">                    
                         Nee
                     </label>
                 </fieldset>
@@ -117,12 +117,12 @@
                 <fieldset class="dichtevraag">
                     <legend>Had dit overleden kind zelf kinderen?</legend>                                                           
                     <label>
-                        <input type="radio" name="kind-overleden-kind">                    
+                        <input type="radio" name="kind-overleden-kind" data-required="true">                    
                         Ja
                     </label>
 
                     <label>
-                        <input type="radio" name="kind-overleden-kind">                    
+                        <input type="radio" name="kind-overleden-kind" data-required="true">                    
                         Nee
                     </label>
                 </fieldset>
@@ -134,34 +134,34 @@
                 <fieldset>
                    <legend>Had de overledene een testament?</legend>                                                                               
                    <label>
-                        <input type="radio" name="testament" class="ja" required>                    
+                        <input type="radio" name="testament" class="ja js-ja" required>                    
                         Ja
                     </label>
 
                     <label>
-                        <input type="radio" name="testament" required> 
+                        <input type="radio" name="testament" class="js-nee" required> 
                         Nee
                     </label>
                 </fieldset>
 
                 <div class="dichtevraag">
                     <label for="1d-2">Protocolnummer notaris</label>
-                    <input type="text" name="protocolnummer" id="1d-2" maxlength="6" pattern="[0-9]{6}">
+                    <input type="text" name="protocolnummer" id="1d-2" maxlength="6" pattern="[0-9]{6}" data-required="true">
                 
                     <label for="1d-3">Voorletter(s)</label>
-                    <input type="text" name="voorletter-notaris" id="1d-3">
+                    <input type="text" name="voorletter-notaris" id="1d-3" data-required="true">
                 
                     <label for="1d-4">Tussenvoegsel(s)</label>
                     <input type="text" name="tussenvoegsel-notaris" id="1d-4">
                 
                     <label for="1d-5">Achternaam</label>
-                    <input type="text" name="achternaam-notaris" id="1d-5">
+                    <input type="text" name="achternaam-notaris" id="1d-5" data-required="true">
                 
                     <label for="1d-6">Vestigingsplaats</label>
-                    <input type="text" name="vestigingsplaats" id="1d-6">
+                    <input type="text" name="vestigingsplaats" id="1d-6" data-required="true">
                 
                     <label for="1d-7">Datum van het testament of van de laatste wijziging</label>
-                    <input type="date" name="datum-testament" id="1d-7">
+                    <input type="date" name="datum-testament" id="1d-7" data-required="true">
                 </div>
             </fieldset>
             <button type="submit">Volgende</button>
@@ -201,51 +201,51 @@
                 <fieldset>
                    <legend>In welk land is het adres van de instelling?</legend>                                                                               
                    <label>
-                        <input type="radio" name="adres-instelling" class="ja" required>                    
+                        <input type="radio" name="adres-instelling" class="nl" required>                    
                         Adres in Nederland
                     </label>
 
                     <label>
-                        <input type="radio" name="adres-instelling" required> 
+                        <input type="radio" name="adres-instelling" class="bl" required> 
                         Adres in Buitenland
                     </label>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="adresnl">
                     <legend>Adres in Nederland</legend>
 
                     <label for="2b-nl-1">Straat</label>
-                    <input type="text" name="straat-nl" id="2b-nl-1">
+                    <input type="text" name="straat-nl" id="2b-nl-1" data-required="true">
 
                     <label for="2b-nl-2">Huisnummer</label>
-                    <input type="text" name="huisnummer-nl" id="2b-nl-2" pattern="[0-9]">
+                    <input type="text" name="huisnummer-nl" id="2b-nl-2" pattern="[0-9]" data-required="true">
 
                     <label for="2b-nl-3">Toevoeging</label>
                     <input type="text" name="toevoeging-nl" id="2b-nl-3">
 
                     <label for="2b-nl-4">Postcode</label>
-                    <input type="text" name="postcode-nl" id="2b-nl-4" pattern="[0-9]{4}[A-Za-z]{2}">
+                    <input type="text" name="postcode-nl" id="2b-nl-4" pattern="[0-9]{4}[A-Za-z]{2}" data-required="true">
 
                     <label for="2b-nl-5">Plaats</label>
-                    <input type="text" name="plaats-nl" id="2b-nl-5">
+                    <input type="text" name="plaats-nl" id="2b-nl-5" data-required="true">
                 </fieldset>
-                <fieldset>
+                <fieldset class="adresbl">
                     <legend>Adres in Buitenland</legend>
 
                     <label for="2b-bu-1">Straat</label>
-                    <input type="text" name="straat-bu" id="2b-bu-1">
+                    <input type="text" name="straat-bu" id="2b-bu-1" data-required="true">
 
                     <label for="2b-bu-2">Huisnummer</label>
-                    <input type="text" name="huisnummer-bu" id="2b-bu-2">
+                    <input type="text" name="huisnummer-bu" id="2b-bu-2" data-required="true">
 
                     <label for="2b-bu-4">Postcode</label>
-                    <input type="text" name="postcode-bu" id="2b-bu-4" minlength="2">
+                    <input type="text" name="postcode-bu" id="2b-bu-4" minlength="2" data-required="true">
 
                     <label for="2b-bu-5">Plaats</label>
-                    <input type="text" name="plaats-bu" id="2b-bu-5">
+                    <input type="text" name="plaats-bu" id="2b-bu-5" data-required="true">
 
                     <label for="2b-bu-6">Landcode</label>
-                    <input type="text" name="landcode" id="2b-bu-6" maxlength="3" pattern="[A-Z]{3}">
+                    <input type="text" name="landcode" id="2b-bu-6" maxlength="3" pattern="[A-Z]{3}" data-required="true">
                 </fieldset>
 
                 <label for="2b-5">Telefoonnummer</label>
@@ -256,6 +256,7 @@
             </fieldset>
             <button type="submit">Volgende</button>
         </form>
-    </main>  
+    </main>
+    <script src="js/script.js"></script>  
 </body>
 </html>
