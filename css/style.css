@@ -159,3 +159,5 @@ fieldset:has(.nl:checked) .adresnl {
 fieldset:has(.bl:checked) .adresbl {
     display: flex;
 }
+
+/* datalist toevoegen (options) met landcodes, bij options het land, en dan de value is de landcode */

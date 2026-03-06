@@ -82,6 +82,26 @@ Ik heb geleerd over de attributen geven bij JavaScript maar ook over de verschil
 **Wat ga ik morgen doen?**\
 Volgende keer ga ik de puntjes op de i zetten van het toevoegen van required, en beginnen met het valideren. 
 
+## Reflectie week 2
+Na de vakantie duurde het even voordat ik volledig was opgestart om weer écht te beginnen aan Browser Tech. Gelukkig had ik wel al opgeschreven waaraan ik wilde werken, dus kon ik lekker daarmee aan de slag gaan. Ik merk nog steeds dat het het beste voor mij werkt als ik eerst in mijn boekje wat dingen schets, voordat ik via de website zelf ga schetsen. Ik vind het fijn om alvast een idee in mijn hoofd te hebben. Hiermee begon ik dan ook op dag 3.
+
+![dag3 schets](/readme-images/dag3-uitkapschets.jpeg)
+
+Door deze schets had ik in mijn hoofd hoe ik de css moest aanpakken om de vragen uit te klappen, en vervolgens bleken het maar een paar regels css te zijn! Weer wat geleerd!
+
+De volgende dag was ik vooral bezig met ervoor zorgen dat het attribuut required werd toegevoegd als er vragen werden uitgeklapt. Dit moest met JavaScript, en ik wist niet waar ik moest beginnen. Ik op internet via MDN en andere forums proberen uit te zoeken hoe ik het nou zou aanpakken. Vervolgens heb ik na een uur Chat maar even gevraagd ter inspiratie. Dit hielp mij om op gang te komen en zo kon ik verder uitschetsen hoe ik het wilde aanpakken. 
+
+![uitzoeken JavaScripy dag 4](/readme-images/dag4-required-uitzoek.jpeg)
+![uitzoeken JavaScripy dag 4](/readme-images/dag4-required-uitzoek2.jpeg)
+
+Om ervoor te zorgen dat ik de volgende keer als ik aan Browser Tech zou zitten weer snel op gang kon komen (na 2 dagen aan CSS te hebben gezeten), heb ik in mijn boekje opgeschreven waar ik tegenaan liep en wat ik daaraan kon doen.
+
+![plan voor dag 5](/readme-images/dag4-voordag5.jpeg)
+
+Het voortgangsgesprek ging goed! Ik heb nieuwe inzichten gekregen in wat ik nog verder kan doen en heb ook meer stof tot nadenken gehad over bepaalde keuzes die ik ga maken in mijn ontwerp, zoals bijvoorbeeld het selecteren van de datum.
+
+Over het algemeen heb ik erg veel geleerd deze week. Ik ben veel meer te weten gekomen over JavaScript en begin ook steeds sneller mijn eigen JavaScript goed te kunnen schrijven. Ik ben er ook meer achter gekomen wat je eigenlijk allemaal kan doen met css; dat je met maar 1 regel ervoor kan zorgen dat een hele vragenreeks uitklapt. 
+
 
 ## Bronnen
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
