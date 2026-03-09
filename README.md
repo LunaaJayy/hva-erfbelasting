@@ -53,7 +53,7 @@ In week 2 ben ik dan ook van plan om zo door te blijven gaan. Ik wil zelf meer u
  - begin met css met dingen open klappen (geen js)
  - zsm met de moeilijke dingen beginnen -> dus die moeilijke dingen als eerst doen van dingen openklallen
 
- ## Week 2
+ ## Week 2 (2-6 maart 2026)
  ### Dag 3 - Maandag 2 maart, met Eva
 
 **Wat heb ik vandaag gedaan?** \
@@ -106,3 +106,6 @@ Over het algemeen heb ik erg veel geleerd deze week. Ik ben veel meer te weten g
 ## Bronnen
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
 - https://chatgpt.com/share/69a6d76a-2e24-8012-8be7-1e7a783916b5
+
+ ## Week 3 (9-13 maart 2026)
+ ### Dag 6 - Maandag 9 maart, met 

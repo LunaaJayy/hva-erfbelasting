@@ -2,8 +2,9 @@
 
 const jaKnoppen = document.querySelectorAll('.js-ja')
 const neeKnoppen = document.querySelectorAll('.js-nee')
+const eersteNee = document.querySelectorAll('.eerste-nee')
 
-//mede dankzij chatGPT - https://chatgpt.com/share/69a6d76a-2e24-8012-8be7-1e7a783916b5
+//met inspiratie van chatGPT - https://chatgpt.com/share/69a6d76a-2e24-8012-8be7-1e7a783916b5
 jaKnoppen.forEach((knop) => {
     knop.addEventListener('change', function(){
         
@@ -21,7 +22,7 @@ jaKnoppen.forEach((knop) => {
     })
 })
 
-neeKnoppen.forEach((knop) => {
+eersteNee.forEach((knop) => {
     knop.addEventListener('change', function() {
         const parentFieldset = this.closest('fieldset')
         
@@ -34,8 +35,25 @@ neeKnoppen.forEach((knop) => {
                 
                 inputs.forEach((input) => {
                     input.removeAttribute('required')
+                    input.checked = false
                 })
             })
+        }
+    })
+})
+
+neeKnoppen.forEach((knop) => {
+    knop.addEventListener('change', function() {
+        const parentFieldset = this.closest('fieldset')
+
+        const dichteVraag = parentFieldset.nextElementSibling      
+        
+        if(this.checked) {
+            const inputs = dichteVraag.querySelectorAll('input')
+                inputs.forEach((input) => {
+                    input.removeAttribute('required')
+                    input.checked = false
+                })    
         }
     })
 })
@@ -81,4 +99,21 @@ radioBL.addEventListener('change', function() {
                 }
             })
         }
+})
+
+// MARK: VOLGEND VR
+const submitKnoppen = document.querySelectorAll('button')
+
+submitKnoppen.forEach(knop => {
+    knop.addEventListener('click', () => {
+        const formEen = document.querySelectorAll('.form1')
+        const formTwee = document.querySelectorAll('.form2')
+
+        formEen.forEach(element => {
+            element.classList.toggle('gesl-form')
+        })
+        formTwee.forEach(element => {
+            element.classList.toggle('gesl-form')
+        })
+    })
 })
