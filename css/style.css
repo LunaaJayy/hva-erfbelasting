@@ -10,6 +10,9 @@
     --bg-color-header:light-dark(#FFC917, # );
     --bg-color-main: light-dark(#E6E6E9, # );
     --btn-text: light-dark(#FFFFFF, # );
+    --btn-shadow: light-dark(#004BA0, );
+    --radio-color: light-dark(#00A888, );
+    --focus: light-dark(#0063D3, );
     */
 
     --display-blue: #003082;
@@ -21,7 +24,15 @@
     --bg-color-main: #FFFFFF;
     --btn-text: #FFFFFF;
     --btn-shadow: #004BA0;
+    --radio-color: #00A888;
+    --focus: #0063D3;
 
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -57,7 +68,7 @@ h1, h2 {
 
 header {
     margin: 0;
-    padding: 1em;
+    padding: 1rem;
 
     /* letterlijk overgenomen van NS website: */
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03), 0 10px 20px rgba(0, 0, 0, 0.04);
@@ -67,8 +78,8 @@ header {
     text-align: center;
     background-color: red;
     color: white;
-    padding: 0.5em;
-    border-radius: 0.3em;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
     }
 }
 
@@ -81,17 +92,16 @@ main {
     align-items: center;
 
     h2 {
-        font-size: 1.5em;
-        font-weight: normal;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        font-size: 1.75rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     p {
         font-style: italic;
-        margin-left: 0.75em;
-        margin-right: 0.75em;
-
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        max-width: 600px
     }
 }
 
@@ -99,16 +109,20 @@ main {
 */
 
 form {
-    margin: 0.75em;
+    margin: 0.75rem;
     max-width: 600px;
 
     &>fieldset{
-        margin-bottom: 1em;
-        padding: 0.75em;
-        border-radius: 0.75em;
+        margin-bottom: 1rem;
+        padding: 0.75rem 0.75rem 1.25rem;
+        border-radius: 0.75rem;
 
         /* letterlijk overgenomen van NS website: */
         box-shadow: 0 2px 4px rgba(0, 0, 0, .03), 0 4px 8px rgba(0, 0, 0, .03), 0 8px 16px rgba(0, 0, 0, .03), 0 0 0 1px var(--fieldset-color);
+
+        fieldset {
+            margin-top: 1rem;
+        }
     }
 }
 
@@ -118,6 +132,7 @@ fieldset{
     
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 form>fieldset>legend {
@@ -128,25 +143,71 @@ form>fieldset>legend {
 }
 
 label {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 input {
     border: var(--input-color) 1px solid;
     border-radius: 6px;
-    padding: .5em;
+    padding: .5rem;
     font-family: 'NS Sans', 'Roboto', sans-serif;
 }
+
+/* Dankzij: https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+
+.radio {
+    display: flex;
+    align-items: center;
+}
+
+input[type='radio'] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0 1rem 0 0;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.0625rem var(--input-color) solid;
+    transform: translateY(-0.03125em);
+    display: grid;
+    place-content: center;
+
+    &:focus {
+        outline: max(2px, 0.15em) solid var(--focus);
+        outline-offset: max(2px, 0.15em);
+    }
+
+    &:checked {
+        border-color: var(--radio-color);
+    }
+
+    &::before {
+        content: "";
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 120ms transform ease-in-out;
+        box-shadow: inset 1rem 1rem var(--radio-color);
+    }
+
+    &:checked::before{
+        transform: scale(1);
+    }
+}
+
 
 button {
     /* overgenomen van NS website */
     background-color: var(--light-color-blue);
     color: var(--btn-text);
     font-family: inherit;
+    font-size: inherit;
 
     border: none;
     border-radius: 4px;
     padding: .6rem 1.15rem;
+    width: 100%;
 
     box-shadow: inset 0 -.125rem 0 var(--btn-shadow);
     
@@ -172,9 +233,11 @@ fieldset:has(.ja:checked) + div {
     display: block;
 }
 
-fieldset:has(.eerste-nee:checked) .dichtevraag {
+/* fieldset:has(.eerste-nee:checked) .dichtevraag {
     display: none;
-}
+} 
+DEZE REGEL IS EIGENLIJK HELEMAAL NIET NODIG OMDAT DE CONTENT
+LEEG WORDT GEMAAKT*/
 
 .adresnl, .adresbl {
     display: none;

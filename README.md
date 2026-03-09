@@ -107,5 +107,16 @@ Over het algemeen heb ik erg veel geleerd deze week. Ik ben veel meer te weten g
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
 - https://chatgpt.com/share/69a6d76a-2e24-8012-8be7-1e7a783916b5
 
- ## Week 3 (9-13 maart 2026)
- ### Dag 6 - Maandag 9 maart, met 
+## Week 3 (9-13 maart 2026)
+### Dag 6 - Maandag 9 maart, met Lynn
+**Wat heb ik vandaag gedaan?** \
+Vandaag heb ik eerst het in/uitklappen helemaal afgemaakt en het toevoegen/verwijderen van required afgemaakt. Vervolgens ben ik begonnen aan het verder afmaken van de styling en heb ik de radio buttons gestijld net als de ns. Ik heb ook de weekly geek video gekeken en er aantekeningen bij gemaakt. Verder heb ik geluisterd naar Rijk van Zanten en een workshop van Vasilis bijgewoond over validatie. 
+
+**Hoeveel tijd heeft me dat gekost?**\
+Het in/uitklappen en required duurde ongeveer een half uur. Dat ging gelukkig best snel. De rest van de dag heb ik gestijld. Het stijlen van de radio button duurde ongeveer een uur.
+
+**Wat heb ik geleerd?**\
+Ik heb meer geleerd over het stijlen van radio buttons, daarnaast ben ik erachter gekomen dat legend bijna niet te stijlen is 'binnen' de fieldset. Behalve met float:left;
+
+**Wat ga ik morgen doen?**\
+Morgen ga ik de hele dag aan het valideren werken, als ik tijd over heb, wil ik weer verder aan de stijling.
