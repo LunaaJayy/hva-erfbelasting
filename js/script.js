@@ -102,18 +102,17 @@ radioBL.addEventListener('change', function() {
 })
 
 // MARK: VOLGEND VR
-const submitKnoppen = document.querySelectorAll('button')
+const form = document.querySelector('form.form1')
 
-submitKnoppen.forEach(knop => {
-    knop.addEventListener('click', () => {
-        const formEen = document.querySelectorAll('.form1')
-        const formTwee = document.querySelectorAll('.form2')
-
-        formEen.forEach(element => {
-            element.classList.toggle('gesl-form')
-        })
-        formTwee.forEach(element => {
-            element.classList.toggle('gesl-form')
-        })
+form.addEventListener('submit', (event) => {
+    event.preventDefault()
+    const formEen = document.querySelectorAll('.form1')
+    const formTwee = document.querySelectorAll('.form2')
+    
+    formEen.forEach(element => {
+        element.classList.add('gesl-form')
+    })
+    formTwee.forEach(element => {
+        element.classList.remove('gesl-form')
     })
 })

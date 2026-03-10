@@ -120,3 +120,17 @@ Ik heb meer geleerd over het stijlen van radio buttons, daarnaast ben ik erachte
 
 **Wat ga ik morgen doen?**\
 Morgen ga ik de hele dag aan het valideren werken, als ik tijd over heb, wil ik weer verder aan de stijling.
+
+### Dag 7 - Dinsdag 10 maart, met Mats
+**Wat heb ik vandaag gedaan?** \
+Vandaag heb ik de CSS validatie gedaan en heb ik een begin gemaakt aan de validatie met JavaScript. Daarnaast ben ik verder gegaan aan de stijling van de webpagina, waardoor het meer op een website van de NS lijkt. Verder heb ik met JavaScript ervoor gezorgd dat je niet meer 'toggled' tussen de twee forms, maar dat het echt wordt gesubmit.
+Verder hebben we vanochtend de weekly geek gedaan en heb ik een workshop gevolgd over accessibility.
+
+**Hoeveel tijd heeft me dat gekost?**\
+Rond een uur of 12 ben ik begonnen aan de validiteit. Met wat drie kwartier/uur pauze heb ik tot 16.00 hieraan gewerkt. Tussendoor heb ik nog wat stijling gedaan, als ik even klaar was met het valideren.
+
+**Wat heb ik geleerd?**\
+Ik heb meer geleerd over SVG (en SVG paths), over valideren met JavaScript en over accessibility als het gaat om forms.
+
+**Wat ga ik morgen doen?**\
+Volgende keer wil ik verder gaan aan validiteit met Javascript. Ook wil ik een radio button maken van 2a, waarbij je 1 van de 3 moet kiezen.

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Aangifte erfbelasting</h1>
@@ -18,43 +21,116 @@
     <main>
         <h2 class="form1">Gegevens van de overledene</h2>
         <p class="form1">vul hier de gegevens in van de overledene</p>
-        <form method="post" class="form1"> <!-- voor alle input types en attributen in de form: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -->
+        <form method="post" class="form1">
+            <!-- voor alle input types en attributen in de form: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -->
             <fieldset> <!-- 1a -->
                 <legend>Persoonsgegevens van overledene</legend>
                 <label for="1a-1">Voorletter(s)</label>
                 <input type="text" name="voorletter(s)" id="1a-1" required>
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Vul geldige voorletter(s) in</p>
+                </div>
 
                 <label for="1a-2">Tussenvoegsel(s)</label>
                 <input type="text" name="tussenvoegsel(s)" id="1a-2">
 
                 <label for="1a-3">Achternaam</label>
                 <input type="text" name="achternaam" id="1a-3" required>
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Vul een geldige achternaam in</p>
+                </div>
 
                 <label for="1a-4">Bsn overledene</label>
                 <input type="text" name="bsn-overledene" id="1a-4" maxlength="9" pattern="[0-9]{9}" required>
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Vul een geldig bsn in</p>
+                </div>
 
                 <label for="1a-5">Overlijdensdatum</label>
                 <input type="date" name="overlijdensdatum" id="1a-5" required>
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Vul een geldig datum in</p>
+                </div>
             </fieldset>
 
             <fieldset> <!-- 1b -->
                 <legend>Partnerschap van overledene</legend>
-                
+
                 <fieldset>
-                    <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van overlijden?</legend>
+                    <legend>Was de overledene getrouwd of had de overledene een geregistreerde partner op het moment van
+                        overlijden?</legend>
                     <label class="radio">
                         <input type="radio" name="overledene-getrouwd" class="fieldset-ja js-ja" required>
                         Ja
                     </label>
 
                     <label class="radio">
-                        <input type="radio" name="overledene-getrouwd" class="eerste-nee" required>    
+                        <input type="radio" name="overledene-getrouwd" class="eerste-nee" required>
                         Nee
                     </label>
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Kies één van de twee opties</p>
+                    </div>
                 </fieldset>
-        
+
                 <fieldset class="dichtevraag">
-                    <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of partner­schapsvoorwaarden laten vast­ leggen in een notariële akte?</legend>
+                    <legend>Hadden de overledene en diens echtgenoot of geregistreerde partner huwelijkse of
+                        partner­schapsvoorwaarden laten vast­ leggen in een notariële akte?</legend>
                     <label class="radio">
                         <input type="radio" name="geregistr-partner" class="ja js-ja" data-required="true">
                         Ja
@@ -64,6 +140,20 @@
                         <input type="radio" name="geregistr-partner" class="js-nee" data-required="true">
                         Nee
                     </label>
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Kies één van de twee opties</p>
+                    </div>
                 </fieldset>
 
                 <div class="dichtevraag">
@@ -73,16 +163,45 @@
                             <input type="radio" name="verrekenbeding" data-required="true">
                             Ja
                         </label>
-                
+
                         <label class="radio">
                             <input type="radio" name="verrekenbeding" data-required="true">
                             Nee
                         </label>
+                        <div class="error">
+                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                                <path
+                                    d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                    fill="#003082" />
+                                <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                                <path
+                                    d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                    fill="#003082" />
+                            </svg>
+                            <p>Kies één van de twee opties</p>
+                        </div>
                     </fieldset>
-                
+
 
                     <label for="1b-4">Datum huwelijkse of partnerschapsvoorwaarden</label>
                     <input type="date" name="datum-huwelijk" id="1b-4" data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldig datum in</p>
+                    </div>
                 </div>
             </fieldset>
 
@@ -90,97 +209,288 @@
                 <legend>Kinderen van overledene</legend>
 
                 <fieldset>
-                    <legend>Had de overledene kinderen?</legend>                   
+                    <legend>Had de overledene kinderen?</legend>
                     <label class="radio">
-                        <input type="radio" name="kinderen" class="fieldset-ja js-ja" required>                   
+                        <input type="radio" name="kinderen" class="fieldset-ja js-ja" required>
                         Ja
                     </label>
                     <label class="radio">
                         <input type="radio" name="kinderen" class="eerste-nee" required>
                         Nee
                     </label>
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Kies één van de twee opties</p>
+                    </div>
                 </fieldset>
 
                 <fieldset class="dichtevraag">
-                    <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?</legend>                                       
+                    <legend>Is 1 van deze kinderen eerder overleden dan de overledene voor wie u nu aangifte doet?
+                    </legend>
                     <label class="radio">
                         <input type="radio" name="kinderen-overleden" class="fieldset-ja js-ja" data-required="true">
                         Ja
                     </label>
 
                     <label class="radio">
-                        <input type="radio" name="kinderen-overleden" class="js-nee" data-required="true">                    
+                        <input type="radio" name="kinderen-overleden" class="js-nee" data-required="true">
                         Nee
                     </label>
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Kies één van de twee opties</p>
+                    </div>
                 </fieldset>
 
                 <fieldset class="dichtevraag">
-                    <legend>Had dit overleden kind zelf kinderen?</legend>                                                           
+                    <legend>Had dit overleden kind zelf kinderen?</legend>
                     <label class="radio">
-                        <input type="radio" name="kind-overleden-kind" data-required="true">                    
+                        <input type="radio" name="kind-overleden-kind" data-required="true">
                         Ja
                     </label>
 
                     <label class="radio">
-                        <input type="radio" name="kind-overleden-kind" data-required="true">                    
+                        <input type="radio" name="kind-overleden-kind" data-required="true">
                         Nee
                     </label>
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Kies één van de twee opties</p>
+                    </div>
                 </fieldset>
             </fieldset>
 
             <fieldset> <!-- 1d -->
-                <legend>Testament overledene</legend> 
+                <legend>Testament overledene</legend>
 
                 <fieldset>
-                   <legend>Had de overledene een testament?</legend>                                                                               
-                   <label class="radio">
-                        <input type="radio" name="testament" class="ja js-ja" required>                    
+                    <legend>Had de overledene een testament?</legend>
+                    <label class="radio">
+                        <input type="radio" name="testament" class="ja js-ja" required>
                         Ja
                     </label>
 
                     <label class="radio">
-                        <input type="radio" name="testament" class="eerste-nee" required> 
+                        <input type="radio" name="testament" class="eerste-nee" required>
                         Nee
                     </label>
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Kies één van de twee opties</p>
+                    </div>
                 </fieldset>
 
                 <div class="dichtevraag">
                     <label for="1d-2">Protocolnummer notaris</label>
-                    <input type="text" name="protocolnummer" id="1d-2" maxlength="6" pattern="[0-9]{6}" data-required="true">
-                
+                    <input type="text" name="protocolnummer" id="1d-2" maxlength="6" pattern="[0-9]{6}"
+                        data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldig nummer in</p>
+                    </div>
+
                     <label for="1d-3">Voorletter(s)</label>
                     <input type="text" name="voorletter-notaris" id="1d-3" data-required="true">
-                
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul geldige voorletter(s) in</p>
+                    </div>
+
                     <label for="1d-4">Tussenvoegsel(s)</label>
                     <input type="text" name="tussenvoegsel-notaris" id="1d-4">
-                
+
                     <label for="1d-5">Achternaam</label>
                     <input type="text" name="achternaam-notaris" id="1d-5" data-required="true">
-                
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige achternaam in</p>
+                    </div>
+
                     <label for="1d-6">Vestigingsplaats</label>
                     <input type="text" name="vestigingsplaats" id="1d-6" data-required="true">
-                
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige plaats in</p>
+                    </div>
+
                     <label for="1d-7">Datum van het testament of van de laatste wijziging</label>
                     <input type="date" name="datum-testament" id="1d-7" data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige datum in</p>
+                    </div>
                 </div>
             </fieldset>
             <button type="submit">Volgende</button>
-        </form> 
-        
+        </form>
+
         <h2 class="form2 gesl-form">Gegevens van de gemachtigde</h2>
-        <p class="form2 gesl-form">Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of meerdere personen en/of instellingen aangifte doet. Het invullen van een telefoonnummer of e-mailadres is niet verplicht, maar wel handig. Dan kunnen wij u makkelijker vragen stellen of uitleg geven.</p>
+        <p class="form2 gesl-form">Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of
+            meerdere personen en/of instellingen aangifte doet. Het invullen van een telefoonnummer of e-mailadres is
+            niet verplicht, maar wel handig. Dan kunnen wij u makkelijker vragen stellen of uitleg geven.</p>
         <form method="post" class="form2 gesl-form">
             <fieldset> <!--2a-->
                 <legend>Vul 1 van de 3 in</legend>
-                
-                <label for="2a-1">Bsn/RSIN gemachtigde</label>
-                <input type="text" name="bsn-gemachtigde" id="2a-1" maxlength="9" pattern="[0-9]{9}">
+
+                <label for="2a-1">
+                    <input type="radio" name="bsn-gemachtigde-radio" required>
+                    Bsn/RSIN gemachtigde
+                </label>
+
+                <!-- <label for="2a-1-txt" class="visual-hidden">Bsn/RSIN gemachtigde</label> -->
+                <input type="text" name="bsn-gemachtigde" id="2a-1-txt" maxlength="9" pattern="[0-9]{9}">
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Vul een geldige bsn in</p>
+                </div>
 
                 <label for="2a-2">Beconnummer adviseur</label>
                 <input type="text" name="beconnummer" id="2a-2" maxlength="6" pattern="[0-9]{6}">
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Vul een geldig nummer in</p>
+                </div>
 
                 <label for="2a-3">Protocolnummer notaris</label>
                 <input type="text" name="protocolnummer" id="2a-3" maxlength="6" pattern="[0-9]{6}">
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Vul een geldig nummer in</p>
+                </div>
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Kies één van de opties</p>
+                </div>
             </fieldset>
 
             <fieldset>
@@ -188,27 +498,69 @@
 
                 <label for="2b-1">Voorletter(s)</label>
                 <input type="text" name="voorletter(s)" id="2b-1" required>
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Vul geldige voorletter(s) in</p>
+                </div>
 
                 <label for="2b-2">Tussenvoegsel(s)</label>
                 <input type="text" name="tussenvoegsel(s)" id="2b-2">
 
                 <label for="2b-3">Achternaam</label>
                 <input type="text" name="achternaam" id="2b-3" required>
+                <div class="error">
+                    <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                        <path
+                            d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                            fill="#003082" />
+                        <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                        <path
+                            d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                            fill="#003082" />
+                    </svg>
+                    <p>Vul een geldige achternaam in</p>
+                </div>
 
                 <label for="2b-4">Naam instelling (bijvoorbeeld een notariskantoor)</label>
                 <input type="text" name="naam-instelling" id="2b-4">
 
                 <fieldset>
-                   <legend>In welk land is het adres van de instelling?</legend>                                                                               
-                   <label class="radio">
-                        <input type="radio" name="adres-instelling" class="nl" required>                    
+                    <legend>In welk land is het adres van de instelling?</legend>
+                    <label class="radio">
+                        <input type="radio" name="adres-instelling" class="nl" required>
                         Adres in Nederland
                     </label>
 
                     <label class="radio">
-                        <input type="radio" name="adres-instelling" class="bl" required> 
+                        <input type="radio" name="adres-instelling" class="bl" required>
                         Adres in Buitenland
                     </label>
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Kies één van de twee opties</p>
+                    </div>
                 </fieldset>
 
                 <fieldset class="adresnl">
@@ -216,36 +568,164 @@
 
                     <label for="2b-nl-1">Straat</label>
                     <input type="text" name="straat-nl" id="2b-nl-1" data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige straat in</p>
+                    </div>
 
                     <label for="2b-nl-2">Huisnummer</label>
                     <input type="text" name="huisnummer-nl" id="2b-nl-2" pattern="[0-9]" data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldig huisnummer in</p>
+                    </div>
 
                     <label for="2b-nl-3">Toevoeging</label>
                     <input type="text" name="toevoeging-nl" id="2b-nl-3">
 
                     <label for="2b-nl-4">Postcode</label>
-                    <input type="text" name="postcode-nl" id="2b-nl-4" pattern="[0-9]{4}[A-Za-z]{2}" data-required="true">
+                    <input type="text" name="postcode-nl" id="2b-nl-4" pattern="[0-9]{4}[A-Za-z]{2}"
+                        data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige postcode in</p>
+                    </div>
 
                     <label for="2b-nl-5">Plaats</label>
                     <input type="text" name="plaats-nl" id="2b-nl-5" data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige plaats in</p>
+                    </div>
                 </fieldset>
                 <fieldset class="adresbl">
                     <legend>Adres in Buitenland</legend>
 
                     <label for="2b-bu-1">Straat</label>
                     <input type="text" name="straat-bu" id="2b-bu-1" data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige straat in</p>
+                    </div>
 
                     <label for="2b-bu-2">Huisnummer</label>
                     <input type="text" name="huisnummer-bu" id="2b-bu-2" data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldig huisnummer in</p>
+                    </div>
 
                     <label for="2b-bu-4">Postcode</label>
                     <input type="text" name="postcode-bu" id="2b-bu-4" minlength="2" data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige postcode in</p>
+                    </div>
 
                     <label for="2b-bu-5">Plaats</label>
                     <input type="text" name="plaats-bu" id="2b-bu-5" data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige plaats in</p>
+                    </div>
 
                     <label for="2b-bu-6">Landcode</label>
-                    <input type="text" name="landcode" id="2b-bu-6" maxlength="3" pattern="[A-Z]{3}" data-required="true">
+                    <input type="text" name="landcode" id="2b-bu-6" maxlength="3" pattern="[A-Z]{3}"
+                        data-required="true">
+                    <div class="error">
+                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 19L10.5 0L21 19H0ZM19.3 18L10.5 2.1L1.7 18H19.3Z" fill="#003082" />
+                            <path
+                                d="M10.5 13C10.2 13 10 12.8 10 12.5V7.5C10 7.2 10.2 7 10.5 7C10.8 7 11 7.2 11 7.5V12.5C11 12.8 10.8 13 10.5 13Z"
+                                fill="#003082" />
+                            <path d="M10 11H11V13H10V11Z" fill="#003082" />
+                            <path
+                                d="M10.5 16C10.9418 16 11.3 15.6418 11.3 15.2C11.3 14.7582 10.9418 14.4 10.5 14.4C10.0582 14.4 9.7 14.7582 9.7 15.2C9.7 15.6418 10.0582 16 10.5 16Z"
+                                fill="#003082" />
+                        </svg>
+                        <p>Vul een geldige landcode in</p>
+                    </div>
                 </fieldset>
 
                 <label for="2b-5">Telefoonnummer</label>
@@ -257,6 +737,7 @@
             <button type="submit">Volgende</button>
         </form>
     </main>
-    <script src="js/script.js"></script>  
+    <script src="js/script.js"></script>
 </body>
+
 </html>

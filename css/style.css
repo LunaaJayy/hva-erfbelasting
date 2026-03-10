@@ -7,12 +7,15 @@
     --light-color-blue:light-dark(#0063D3 #);
     --input-color:light-dark(#C4C5CB, # );
     --fieldset-color:light-dark(#EAEBEE, # );
+    --fieldset-bg: light-dark(#FFFFFF, );
     --bg-color-header:light-dark(#FFC917, # );
     --bg-color-main: light-dark(#E6E6E9, # );
     --btn-text: light-dark(#FFFFFF, # );
     --btn-shadow: light-dark(#004BA0, );
     --radio-color: light-dark(#00A888, );
     --focus: light-dark(#0063D3, );
+    --hover-border: light-dark(#404144, );
+    --error-color: light-dark(#EC0045, );
     */
 
     --display-blue: #003082;
@@ -20,13 +23,15 @@
     --light-color-blue: #0063D3;
     --input-color: #C4C5CB;
     --fieldset-color: #EAEBEE;
+    --fieldset-bg: #FFFFFF;
     --bg-color-header: #FFC917;
-    --bg-color-main: #FFFFFF;
+    --bg-color-main: #E6E6E9;
     --btn-text: #FFFFFF;
     --btn-shadow: #004BA0;
     --radio-color: #00A888;
     --focus: #0063D3;
-
+    --hover-border: #404144;
+    --error-color: #EC0045;
 }
 
 *,
@@ -57,6 +62,10 @@ body {
     margin: 0;
     font-family: 'NS Sans', 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+.visual-hidden {
+    appearance: none;
 }
 
 h1, h2 {
@@ -111,11 +120,12 @@ main {
 form {
     margin: 0.75rem;
     max-width: 600px;
+    width: 100%;
 
     &>fieldset{
         margin-bottom: 1rem;
         padding: 0.75rem 0.75rem 1.25rem;
-        border-radius: 0.75rem;
+        border-radius: 0.1rem;
 
         /* letterlijk overgenomen van NS website: */
         box-shadow: 0 2px 4px rgba(0, 0, 0, .03), 0 4px 8px rgba(0, 0, 0, .03), 0 8px 16px rgba(0, 0, 0, .03), 0 0 0 1px var(--fieldset-color);
@@ -133,17 +143,20 @@ fieldset{
     display: flex;
     flex-direction: column;
     padding: 0;
+    background-color: var(--fieldset-bg);
 }
 
 form>fieldset>legend {
     color: var(--display-blue);
     font-weight: bold;
-
+    font-size: 1.1rem;
+    border-bottom: 3px var(--bg-color-header) solid;
+    padding-bottom: 0.1rem;
     float: left;
 }
 
 label {
-    margin-top: 1rem;
+    margin: 1rem 0 .4rem;
 }
 
 input {
@@ -153,7 +166,21 @@ input {
     font-family: 'NS Sans', 'Roboto', sans-serif;
 }
 
+input[type='text'], input[type='date'], input[type='email'] {
+    min-height: 3rem;
+    font-size: 1.12rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &:hover {
+    border-color: var(--hover-border);
+    }
+}
+
+/* -------------------------------------- MARK: RADIO STYLING
+*/
 /* Dankzij: https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
+
 
 .radio {
     display: flex;
@@ -233,12 +260,6 @@ fieldset:has(.ja:checked) + div {
     display: block;
 }
 
-/* fieldset:has(.eerste-nee:checked) .dichtevraag {
-    display: none;
-} 
-DEZE REGEL IS EIGENLIJK HELEMAAL NIET NODIG OMDAT DE CONTENT
-LEEG WORDT GEMAAKT*/
-
 .adresnl, .adresbl {
     display: none;
 }
@@ -254,8 +275,48 @@ fieldset:has(.bl:checked) .adresbl {
 /* --------------------------------- MARK: VOLGEND VR
  */
 
-.gesl-form {
+/* .gesl-form {
+    display: none;
+} */
+
+/* --------------------------------- MARK: VALIDITY
+ */
+
+fieldset div {
+    grid-template-columns: 1.3rem auto;
+    grid-gap: .5rem;
+
+    margin-top: .5rem;
+
+    svg path{
+        fill: var(--error-color);
+    }
+
+    p {
+    color: var(--error-color);
+    font-style: normal;
+    font-size: 0.8rem;
+    margin: 0;
+    transform: translateY(0.18rem);
+    }
+
+}
+
+.error {
     display: none;
 }
+
+input[type="text"]:user-invalid, input[type="date"]:user-invalid {
+    border: 0.1rem var(--error-color) solid;  
+    
+    + div {
+        display: grid;
+    }
+}
+
+label:has(input[type="radio"]:user-invalid) + div {
+        display: grid;
+    }
+
 
 /* datalist toevoegen (options) met landcodes, bij options het land, en dan de value is de landcode */
