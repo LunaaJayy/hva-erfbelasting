@@ -102,13 +102,8 @@ Het voortgangsgesprek ging goed! Ik heb nieuwe inzichten gekregen in wat ik nog 
 
 Over het algemeen heb ik erg veel geleerd deze week. Ik ben veel meer te weten gekomen over JavaScript en begin ook steeds sneller mijn eigen JavaScript goed te kunnen schrijven. Ik ben er ook meer achter gekomen wat je eigenlijk allemaal kan doen met css; dat je met maar 1 regel ervoor kan zorgen dat een hele vragenreeks uitklapt. 
 
-
-## Bronnen
-- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
-- https://chatgpt.com/share/69a6d76a-2e24-8012-8be7-1e7a783916b5
-
 ## Week 3 (9-13 maart 2026)
-### Dag 6 - Maandag 9 maart, met Lynn
+### Dag 5 - Maandag 9 maart, met Lynn
 **Wat heb ik vandaag gedaan?** \
 Vandaag heb ik eerst het in/uitklappen helemaal afgemaakt en het toevoegen/verwijderen van required afgemaakt. Vervolgens ben ik begonnen aan het verder afmaken van de styling en heb ik de radio buttons gestijld net als de ns. Ik heb ook de weekly geek video gekeken en er aantekeningen bij gemaakt. Verder heb ik geluisterd naar Rijk van Zanten en een workshop van Vasilis bijgewoond over validatie. 
 
@@ -121,7 +116,7 @@ Ik heb meer geleerd over het stijlen van radio buttons, daarnaast ben ik erachte
 **Wat ga ik morgen doen?**\
 Morgen ga ik de hele dag aan het valideren werken, als ik tijd over heb, wil ik weer verder aan de stijling.
 
-### Dag 7 - Dinsdag 10 maart, met Mats
+### Dag 6 - Dinsdag 10 maart, met Mats
 **Wat heb ik vandaag gedaan?** \
 Vandaag heb ik de CSS validatie gedaan en heb ik een begin gemaakt aan de validatie met JavaScript. Daarnaast ben ik verder gegaan aan de stijling van de webpagina, waardoor het meer op een website van de NS lijkt. Verder heb ik met JavaScript ervoor gezorgd dat je niet meer 'toggled' tussen de twee forms, maar dat het echt wordt gesubmit.
 Verder hebben we vanochtend de weekly geek gedaan en heb ik een workshop gevolgd over accessibility.
@@ -151,3 +146,22 @@ In deze schetsen is vooral dag 6 te zien, waarbij ik vooral de css validatie heb
 Ik vond de Weekly Nerd erg interessant, het past perfect bij dit vak. Echter, ik vond het wel jammer dat deze weekly nerd in de 'laatste' week kwam in plaats van aan het begin. Nu zijn er namelijk nog erg veel puntjes op de i die ik aankomende week wil fixen, en weet ik niet of ik veel tijd heb om de andere dingen die ze hebben verteld toe te passen. 
 
 Deze week was over het algemeen erg productief en ik heb erg veel dingen kunen doen, ook al leek het qua eindresultaat tijdens de voortgangsgesprek niet heel erg zo, voelde het voor mij gelukkig wel!
+
+## Week 4 (16-19 maart 2026)
+### Dag 7 - Maandag 16 maart, met Alex
+**Wat heb ik vandaag gedaan?** \
+Vandaag heb ik vooral aan de stijling gezeten. Ik heb extra dingen toegevoegd zoals algemene informatie, datalist met alle landcodes, en ervoor gezorgd dat je een akte kan uploaden (en die ook gestijld).
+
+**Hoeveel tijd heeft me dat gekost?**\
+Dit heeft me de hele dag gekost. Het uitzoeken van hoe ik snel die landcodes in ieder zijn eigen <option> kon doen duurde het langst.
+
+**Wat heb ik geleerd?**\
+Ik heb over de input type="file" geleerd, over startViewTransition (ook al heb ik dat niet toegepast) en over hoe je een max datum met javascript de datum van vandaag kan maken.
+
+**Wat ga ik morgen doen?**\
+Als laatste informatie wil ik nog kijken waar extra informatie toegevoegd moet worden, wil ik een terugknop toevoegen en wil ik wat velden korter maken.
+
+## Bronnen
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
+- https://chatgpt.com/share/69a6d76a-2e24-8012-8be7-1e7a783916b5
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::file-selector-button

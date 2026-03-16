@@ -1,7 +1,7 @@
 :root {
-    color-scheme: light dark;
+	color-scheme: light dark;
 
-    /* 
+	/* 
     --ns-display-blue:light-dark(#003082, #);
     --text-color:light-dark(#000000, # );
     --light-color-blue:light-dark(#0063D3 #);
@@ -18,99 +18,143 @@
     --error-color: light-dark(#EC0045, );
     */
 
-    --display-blue: #003082;
-    --text-color: #000000;
-    --light-color-blue: #0063D3;
-    --input-color: #C4C5CB;
-    --fieldset-color: #EAEBEE;
-    --fieldset-bg: #FFFFFF;
-    --bg-color-header: #FFC917;
-    --bg-color-main: #E6E6E9;
-    --btn-text: #FFFFFF;
-    --btn-shadow: #004BA0;
-    --radio-color: #00A888;
-    --focus: #0063D3;
-    --hover-border: #404144;
-    --error-color: #EC0045;
+	--display-blue: #003082;
+	--text-color: #000000;
+	--light-color-blue: #0063d3;
+	--input-color: #c4c5cb;
+	--fieldset-color: #eaebee;
+	--fieldset-bg: #ffffff;
+	--bg-color-header: #ffc917;
+	--bg-color-main: #e6e6e9;
+	--btn-text: #ffffff;
+	--btn-shadow: #004ba0;
+	--radio-color: #00a888;
+	--focus: #0063d3;
+	--hover-border: #404144;
+	--error-color: #ec0045;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'NS Sans';
-    src: url(../fonts/nssans-regular.woff2);
-    /* font-weight: normal; */
+	font-family: "NS Sans";
+	src: url(../fonts/nssans-regular.woff2);
 }
 
 @font-face {
-    font-family: 'NS Sans';
-    src: url(../fonts/nssans-bold.woff2);
-    font-weight: bold;
+	font-family: "NS Sans";
+	src: url(../fonts/nssans-bold.woff2);
+	font-weight: bold;
 }
 
 @font-face {
-    font-family: 'NS Sans';
-    src: url(../fonts/nssans-italic.woff2);
-    font-style: italic;
+	font-family: "NS Sans";
+	src: url(../fonts/nssans-italic.woff2);
+	font-style: italic;
 }
 
 body {
-    margin: 0;
-    font-family: 'NS Sans', 'Roboto', sans-serif;
-    font-size: 16px;
+	margin: 0;
+	font-family: "NS Sans", "Roboto", sans-serif;
+	font-size: 16px;
+    line-height: 1.5rem;
 }
 
-.visual-hidden {
-    appearance: none;
+h1,
+h2 {
+	color: var(--display-blue);
+	margin: 0;
+	font-size: 35px;
 }
-
-h1, h2 {
-    color: var(--display-blue);
-    margin: 0;
-    font-size: 35px;
-}
-
 
 header {
-    margin: 0;
-    padding: 1rem;
+	margin: 0;
+	padding: 1rem;
 
-    /* letterlijk overgenomen van NS website: */
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03), 0 10px 20px rgba(0, 0, 0, 0.04);
-    background-color: var(--bg-color-header);
+	/* letterlijk overgenomen van NS website: */
+	box-shadow:
+		0 1px 1px rgba(0, 0, 0, 0.03),
+		0 10px 20px rgba(0, 0, 0, 0.04);
+	background-color: var(--bg-color-header);
 
-    p {
-    text-align: center;
-    background-color: red;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    }
+	p {
+		text-align: center;
+		background-color: red;
+		color: white;
+		padding: 0.5rem;
+		border-radius: 0.3rem;
+	}
 }
 
 main {
-    background-color: var(--bg-color-main);
-    padding-top: 2em;
+	background-color: var(--bg-color-main);
+	padding: 2em 1rem 0 1rem;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 100%;
 
-    h2 {
-        font-size: 1.75rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+	h2 {
+		font-size: 1.75rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+        font-weight: normal;
+	}
+
+	p {
+		font-style: italic;
+		margin-left: 0.75rem;
+		margin-right: 0.75rem;
+		max-width: 600px;
+	}
+}
+
+section {
+	background-color: var(--fieldset-bg);
+	margin-bottom: 3rem;
+	padding: 1.2rem 0.75rem 1.25rem;
+	border-radius: 0.1rem;
+    max-width: 600px;
+
+	/* letterlijk overgenomen van NS website: */
+	box-shadow:
+		0 2px 4px rgba(0, 0, 0, 0.03),
+		0 4px 8px rgba(0, 0, 0, 0.03),
+		0 8px 16px rgba(0, 0, 0, 0.03),
+		0 0 0 1px var(--fieldset-color);
+
+    h3{
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 1.5rem .5rem .5rem .5rem;
+        color: var(--display-blue);
+        font-weight: normal;
     }
-
-    p {
-        font-style: italic;
-        margin-left: 0.75rem;
-        margin-right: 0.75rem;
-        max-width: 600px
+    ul {
+        margin-top: .5rem;
+        li {
+            margin-bottom: .5rem;
+            list-style-type: square;
+            &::marker{
+                color: var(--light-color-blue);
+                font-size: 1.4rem;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        color: var(--focus);
+        border-bottom: .125rem var(--bg-color-main) solid;
+        font-weight: bold;
+        transition: border-color .1s ease-in;
+        &:hover, &:focus {
+            border-color: var(--focus);
+        }
     }
 }
 
@@ -118,161 +162,198 @@ main {
 */
 
 form {
-    margin: 0.75rem;
-    max-width: 600px;
-    width: 100%;
+	max-width: 600px;
+	margin-bottom: 0.75rem;
+	width: 100%;
 
-    &>fieldset{
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        padding: 0.75rem 0.75rem 1.25rem;
-        border-radius: 0.1rem;
+	& > fieldset {
+		margin-bottom: 1rem;
+		padding: 0.75rem 0.75rem 1.25rem;
+		border-radius: 0.1rem;
 
-        /* letterlijk overgenomen van NS website: */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .03), 0 4px 8px rgba(0, 0, 0, .03), 0 8px 16px rgba(0, 0, 0, .03), 0 0 0 1px var(--fieldset-color);
+		/* letterlijk overgenomen van NS website: */
+		box-shadow:
+			0 2px 4px rgba(0, 0, 0, 0.03),
+			0 4px 8px rgba(0, 0, 0, 0.03),
+			0 8px 16px rgba(0, 0, 0, 0.03),
+			0 0 0 1px var(--fieldset-color);
 
-        fieldset {
-            margin-top: 1rem;
-        }
-    }
+		fieldset {
+			margin-top: 1rem;
+		}
+	}
 }
 
+fieldset {
+	border: none;
 
-fieldset{
-    border: none;
-    
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    background-color: var(--fieldset-bg);
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	background-color: var(--fieldset-bg);
+    margin: 0;
 }
 
-form>fieldset>legend {
-    color: var(--display-blue);
-    font-weight: bold;
-    font-size: 1.1rem;
-    border-bottom: 3px var(--bg-color-header) solid;
-    padding-bottom: 0.1rem;
-    float: left;
+.form1 fieldset div:last-of-type:has(div ~ div ~ div) {
+    grid-gap: unset;
+}
+
+form > fieldset > legend {
+	color: var(--display-blue);
+	font-weight: bold;
+	font-size: 1.1rem;
+	border-bottom: 3px var(--bg-color-header) solid;
+	padding-bottom: 0.1rem;
+	float: left;
 }
 
 label {
-    margin: 1rem 0 .4rem;
+	margin: 1rem 0 0.4rem;
 }
 
 input {
-    border: var(--input-color) 1px solid;
-    border-radius: 6px;
-    padding: .5rem;
-    font-family: 'NS Sans', 'Roboto', sans-serif;
+	border: var(--input-color) 1px solid;
+	border-radius: 6px;
+	padding: 0.5rem;
+	font-family: "NS Sans", "Roboto", sans-serif;
 }
 
-input[type='text'], input[type='date'], input[type='email'] {
-    min-height: 3rem;
-    font-size: 1.12rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[list] {
+	min-height: 3rem;
+	font-size: 1.12rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 
-    &:hover {
-    border-color: var(--hover-border);
-    }
+	&:hover {
+		border-color: var(--hover-border);
+	}
 }
 
+/* Dankzij: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::file-selector-button */
+
+input[type="file"] {
+	cursor: pointer;
+
+	&::file-selector-button {
+		background-color: var(--light-color-blue);
+		color: var(--btn-text);
+		font-family: inherit;
+		font-size: inherit;
+		cursor: pointer;
+
+		border: none;
+		border-radius: 4px;
+		padding: 0.6rem 0.9rem;
+		margin-right: 0.6rem;
+		box-shadow: inset 0 -0.125rem 0 var(--btn-shadow);
+	}
+}
 /* -------------------------------------- MARK: RADIO STYLING
 */
 /* Dankzij: https://moderncss.dev/pure-css-custom-styled-radio-buttons/ */
 
-
 .radio {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
-input[type='radio'] {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0 1rem 0 0;
-    border-radius: 50%;
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 0.0625rem var(--input-color) solid;
-    transform: translateY(-0.03125em);
-    display: grid;
-    place-content: center;
+input[type="radio"] {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0 1rem 0 0;
+	border-radius: 50%;
+	width: 1.5rem;
+	height: 1.5rem;
+	border: 0.0625rem var(--input-color) solid;
+	transform: translateY(-0.03125em);
+	display: grid;
+	place-content: center;
+	cursor: pointer;
 
-    &:focus {
-        outline: max(2px, 0.15em) solid var(--focus);
-        outline-offset: max(2px, 0.15em);
-    }
+	&:focus {
+		outline: max(2px, 0.15em) solid var(--focus);
+		outline-offset: max(2px, 0.15em);
+	}
 
-    &:checked {
-        border-color: var(--radio-color);
-    }
+	&:checked {
+		border-color: var(--radio-color);
+	}
 
-    &::before {
-        content: "";
-        width: 0.75rem;
-        height: 0.75rem;
-        border-radius: 50%;
-        transform: scale(0);
-        transition: 120ms transform ease-in-out;
-        box-shadow: inset 1rem 1rem var(--radio-color);
-    }
+	&::before {
+		content: "";
+		width: 0.75rem;
+		height: 0.75rem;
+		border-radius: 50%;
+		transform: scale(0);
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 1rem 1rem var(--radio-color);
+	}
 
-    &:checked::before{
-        transform: scale(1);
-    }
+	&:checked::before {
+		transform: scale(1);
+	}
 }
-
 
 button {
-    /* overgenomen van NS website */
-    background-color: var(--light-color-blue);
-    color: var(--btn-text);
-    font-family: inherit;
-    font-size: inherit;
+	/* overgenomen van NS website */
+	background-color: var(--light-color-blue);
+	color: var(--btn-text);
+	font-family: inherit;
+	font-size: inherit;
 
-    border: none;
-    border-radius: 4px;
-    padding: .6rem 1.15rem;
-    margin: 0 1rem;
-    width: inherit;
+	border: none;
+	border-radius: 4px;
+	padding: 0.6rem 1.15rem;
+	width: 100%;
 
-    box-shadow: inset 0 -.125rem 0 var(--btn-shadow);
-    
-    &:hover, &:focus {
-        box-shadow: inset 0 -3.125rem 0 var(--btn-shadow);
-        transition: box-shadow .15s ease-in-out;
-        cursor: pointer;
-    }
+	box-shadow: inset 0 -0.125rem 0 var(--btn-shadow);
+
+	&:hover,
+	&:focus {
+		box-shadow: inset 0 -3.125rem 0 var(--btn-shadow);
+		transition: box-shadow 0.15s ease-in-out;
+		cursor: pointer;
+	}
 }
 
 /* --------------------------------- MARK: IN/UIT KLAP
  */
 
- .dichtevraag {
-    display: none
- }
+.dichtevraag {
+	display: none;
+}
 
 fieldset:has(.fieldset-ja:checked) + fieldset {
-    display: flex;
+	display: flex;
 }
 
 fieldset:has(.ja:checked) + div {
-    display: block;
+	display: flex;
+	flex-direction: column;
 }
 
-.adresnl, .adresbl {
-    display: none;
+.form2 > fieldset:first-of-type .radio + input {
+	display: none;
+}
+
+.form2 > fieldset:first-of-type .radio:has(input:checked) + input {
+	display: block;
+}
+
+.adresnl,
+.adresbl {
+	display: none;
 }
 
 fieldset:has(.nl:checked) .adresnl {
-    display: flex;
+	display: flex;
 }
 
 fieldset:has(.bl:checked) .adresbl {
-    display: flex;
+	display: flex;
 }
 
 /* --------------------------------- MARK: VOLGEND VR
@@ -286,41 +367,41 @@ fieldset:has(.bl:checked) .adresbl {
  */
 
 fieldset div {
-    grid-template-columns: 1.3rem auto;
-    grid-gap: .5rem;
+	grid-template-columns: 1.3rem auto;
+	grid-gap: 0.5rem;
 
-    margin-top: .5rem;
+	margin-top: 0.5rem;
 
-    svg path{
-        fill: var(--error-color);
-    }
+	svg path {
+		fill: var(--error-color);
+	}
 
-    p {
-    color: var(--error-color);
-    font-style: normal;
-    font-size: 0.8rem;
-    margin: 0;
-    transform: translateY(0.18rem);
-    }
-
+	p {
+		color: var(--error-color);
+		font-style: normal;
+		font-size: 0.8rem;
+		margin: 0;
+		transform: translateY(0.18rem);
+	}
 }
 
 .error {
-    display: none;
+	display: none;
 }
 
-input[type="text"]:user-invalid, input[type="date"]:user-invalid {
-    border: 0.1rem var(--error-color) solid;  
-    
-    + div {
-        display: grid;
-    }
+input[type="text"]:user-invalid,
+input[type="date"]:user-invalid,
+input[type="file"]:user-invalid {
+	border: 0.1rem var(--error-color) solid;
+
+	+ div {
+		display: grid;
+	}
 }
 
 label:has(input[type="radio"]:user-invalid) + div {
-        display: grid;
-    }
-
+	display: grid;
+}
 
 /* 
 VRAGEN:
@@ -333,4 +414,3 @@ FEEDBACK:
 - De velden zo groot maken als dat het is meestal
 - Vorige knop toevoegen (links boven?)
 */
-
