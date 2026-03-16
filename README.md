@@ -134,3 +134,20 @@ Ik heb meer geleerd over SVG (en SVG paths), over valideren met JavaScript en ov
 
 **Wat ga ik morgen doen?**\
 Volgende keer wil ik verder gaan aan validiteit met Javascript. Ook wil ik een radio button maken van 2a, waarbij je 1 van de 3 moet kiezen.
+
+## Reflectie week 3
+Deze week stond vooral in het teken van stijling en valideren. Na het voortangsgesprek van week 2 wilde ik vooral eerst een beetje verder gaan aan de stijling en het afmaken van het in/uitklappen en het toevoegen of verwijderen van required. Ik had eigenlijk eerder aan het valideren willen beginnen, maar de andere dingen die ik aan het doen was vergde meer tijd dan ik dacht. 
+
+De JavaScript validatie lijkt me nog wel lastig, ik ga daar in de laatste week aan zitten. Het is wel een leuke uitdaging, maar lastig om te bedenken bij welke vragen ik JavaScript validatie kan toepassen. 
+
+Omdat ik maandag vooral met de stijling bezig was had ik niet veel (vrijwel niks) geschetst in mijn boekje. Ik ging vooral 'schetsen' aan de hand van css: dingen proberen en die vervolgens weer aanpassen. Dit schetsen met css gaat mij in de toekomst helpen met mijn leerdoel 'sneler/efficienter beginnen aan projecten'. 
+
+![dag 5 schets, wat niets is](/readme-images/dag5(vooral6).jpeg)
+
+In deze schetsen is vooral dag 6 te zien, waarbij ik vooral de css validatie heb geregeld. Ook zie je de schets van hoe ik de 'kies 1 van 3' vraag wilde uitwerken. 
+
+![dag 6 schets](/readme-images/dag6.jpeg)
+
+Ik vond de Weekly Nerd erg interessant, het past perfect bij dit vak. Echter, ik vond het wel jammer dat deze weekly nerd in de 'laatste' week kwam in plaats van aan het begin. Nu zijn er namelijk nog erg veel puntjes op de i die ik aankomende week wil fixen, en weet ik niet of ik veel tijd heb om de andere dingen die ze hebben verteld toe te passen. 
+
+Deze week was over het algemeen erg productief en ik heb erg veel dingen kunen doen, ook al leek het qua eindresultaat tijdens de voortgangsgesprek niet heel erg zo, voelde het voor mij gelukkig wel!
