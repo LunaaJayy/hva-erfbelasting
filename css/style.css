@@ -16,6 +16,7 @@
     --focus: light-dark(#0063D3, );
     --hover-border: light-dark(#404144, );
     --error-color: light-dark(#EC0045, );
+	--help-text: light-dark(#00010d8a, );
     */
 
 	--display-blue: #003082;
@@ -32,6 +33,7 @@
 	--focus: #0063d3;
 	--hover-border: #404144;
 	--error-color: #ec0045;
+	--help-text: #00010d8a;
 }
 
 *,
@@ -62,6 +64,8 @@ body {
 	font-family: "NS Sans", "Roboto", sans-serif;
 	font-size: 16px;
     line-height: 1.5rem;
+	background-color: var(--bg-color-main);
+
 }
 
 h1,
@@ -73,7 +77,10 @@ h2 {
 
 header {
 	margin: 0;
-	padding: 1rem;
+	padding: 1rem 1rem 8rem;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
 
 	/* letterlijk overgenomen van NS website: */
 	box-shadow:
@@ -91,18 +98,16 @@ header {
 }
 
 main {
-	background-color: var(--bg-color-main);
-	padding: 2em 1rem 0 1rem;
-
+	padding: 9rem 1rem 0 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
     width: 100%;
 
+
 	h2 {
 		font-size: 1.75rem;
-		margin-left: 0.5rem;
-		margin-right: 0.5rem;
+		margin: 1rem .5rem 0;
         font-weight: normal;
 	}
 
@@ -158,6 +163,31 @@ section {
     }
 }
 
+
+section:nth-of-type(2), section:nth-of-type(3) {
+	margin: 0 0 2rem;
+	width: 100%;
+
+	h2 {
+		margin: 0 0 .5rem;
+		border-bottom: 3px var(--bg-color-header) solid;
+		padding-bottom: .5rem;
+	}
+
+	button {
+		margin-top: 1rem;
+		border: none;
+		padding: 0;
+		background-color: unset;
+		color: var(--light-color-blue);
+		box-shadow: unset;
+		width: auto;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 /* -------------------------------------- MARK: FORM
 */
 
@@ -194,7 +224,7 @@ fieldset {
     margin: 0;
 }
 
-.form1 fieldset div:last-of-type:has(div ~ div ~ div) {
+.stap1 fieldset div:last-of-type:has(div ~ div ~ div) {
     grid-gap: unset;
 }
 
@@ -209,6 +239,17 @@ form > fieldset > legend {
 
 label {
 	margin: 1rem 0 0.4rem;
+	&:has(input[type='radio']:checked) {
+		color: var(--display-blue);
+	}
+}
+
+form:not(div p) p {
+	color: var(--help-text);
+	font-size: .875rem;
+	font-style: normal;
+	transform: unset;
+	margin: 0;
 }
 
 input {
@@ -318,6 +359,14 @@ button {
 		cursor: pointer;
 	}
 }
+/* --------------------------------- MARK: DETAILS FORM
+ */
+
+ form:nth-of-type(2) fieldset:first-of-type input[type="text"] {
+	max-width: 300px;
+	margin-left: 2.5rem;
+ }
+
 
 /* --------------------------------- MARK: IN/UIT KLAP
  */
@@ -333,13 +382,14 @@ fieldset:has(.fieldset-ja:checked) + fieldset {
 fieldset:has(.ja:checked) + div {
 	display: flex;
 	flex-direction: column;
+	grid-gap: unset;
 }
 
-.form2 > fieldset:first-of-type .radio + input {
+.stap2 > fieldset:first-of-type .radio + input {
 	display: none;
 }
 
-.form2 > fieldset:first-of-type .radio:has(input:checked) + input {
+.stap2 > fieldset:first-of-type .radio:has(input:checked) + input {
 	display: block;
 }
 
@@ -359,14 +409,14 @@ fieldset:has(.bl:checked) .adresbl {
 /* --------------------------------- MARK: VOLGEND VR
  */
 
-.gesl-form {
+/* .gesl-form {
     display: none;
-}
+} */
 
 /* --------------------------------- MARK: VALIDITY
  */
 
-fieldset div {
+.error {
 	grid-template-columns: 1.3rem auto;
 	grid-gap: 0.5rem;
 
@@ -402,15 +452,3 @@ input[type="file"]:user-invalid {
 label:has(input[type="radio"]:user-invalid) + div {
 	display: grid;
 }
-
-/* 
-VRAGEN:
-- Mag bsn bsn blijven? Adhv die weekly nerd 
-
-FEEDBACK:
-- datalist toevoegen (options) met landcodes, bij options het land, en dan de value is de landcode
-- Autocomplete uitzetten!
-- Extra informatie laten zien (als extra uitleg)
-- De velden zo groot maken als dat het is meestal
-- Vorige knop toevoegen (links boven?)
-*/

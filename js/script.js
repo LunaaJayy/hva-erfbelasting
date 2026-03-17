@@ -18,6 +18,9 @@ jaKnoppen.forEach((knop) => {
 				}
 			});
 		}
+		document.startViewTransition(() => {
+			volgendReqVraag.scrollIntoView({ behavior: "smooth", block: "center" });
+		});
 	});
 });
 
@@ -38,6 +41,9 @@ eersteNee.forEach((knop) => {
 				});
 			});
 		}
+		document.startViewTransition(() => {
+			parentFieldset.scrollIntoView({ behavior: "smooth", block: "center" });
+		});
 	});
 });
 
@@ -54,27 +60,37 @@ neeKnoppen.forEach((knop) => {
 				input.checked = false;
 			});
 		}
+		document.startViewTransition(() => {
+			parentFieldset.scrollIntoView({ behavior: "smooth", block: "center" });
+		});
 	});
 });
 
 //required een van drie
-const eenVanDrieRadios = document.querySelectorAll(".form2 > fieldset:first-of-type .radio input");
+const eenVanDrieRadios = document.querySelectorAll(
+	".stap2 > fieldset:first-of-type .radio input",
+);
 
 eenVanDrieRadios.forEach((radio) => {
 	radio.addEventListener("change", function () {
 		const parentLabel = this.closest("label");
 		const dichteVraag = parentLabel.nextElementSibling;
-        const alleInputs = document.querySelectorAll('.form2 > fieldset:first-of-type > input')
+		const alleInputs = document.querySelectorAll(
+			".stap2 > fieldset:first-of-type > input",
+		);
 
 		if (this.checked) {
-            alleInputs.forEach((input) => {
-                input.removeAttribute("required");
+			alleInputs.forEach((input) => {
+				input.removeAttribute("required");
 				input.checked = false;
-            })
+			});
 			if (dichteVraag.hasAttribute("data-required")) {
 				dichteVraag.setAttribute("required", "");
 			}
 		}
+		document.startViewTransition(() => {
+			dichteVraag.scrollIntoView({ behavior: "smooth", block: "center" });
+		});
 	});
 });
 
@@ -86,9 +102,9 @@ const radioBL = document.querySelector(".bl");
 radioNL.addEventListener("change", function () {
 	const inputsNL = document.querySelectorAll(".adresnl input");
 	const inputsBL = document.querySelectorAll(".adresbl input");
+	const sectieNL = document.querySelector(".adresnl");
 
 	if (this.checked) {
-		console.log("check");
 		inputsNL.forEach((input) => {
 			if (input.hasAttribute("data-required")) {
 				input.setAttribute("required", "");
@@ -100,14 +116,17 @@ radioNL.addEventListener("change", function () {
 			}
 		});
 	}
+	document.startViewTransition(() => {
+		sectieNL.scrollIntoView({ behavior: "smooth", block: "center" });
+	});
 });
 
 radioBL.addEventListener("change", function () {
 	const inputsNL = document.querySelectorAll(".adresnl input");
 	const inputsBL = document.querySelectorAll(".adresbl input");
+	const sectieBL = document.querySelector(".adresbl");
 
 	if (this.checked) {
-		console.log("check");
 		inputsBL.forEach((input) => {
 			if (input.hasAttribute("data-required")) {
 				input.setAttribute("required", "");
@@ -119,46 +138,61 @@ radioBL.addEventListener("change", function () {
 			}
 		});
 	}
+	document.startViewTransition(() => {
+		sectieBL.scrollIntoView({ behavior: "smooth", block: "center" });
+	});
 });
 
 // MARK: VOLGEND VR
-const form = document.querySelector("form.form1");
+const form = document.querySelector("form.stap1");
 
 form.addEventListener("submit", (event) => {
 	event.preventDefault();
-	const formEen = document.querySelectorAll(".form1");
-	const formTwee = document.querySelectorAll(".form2");
-    const algInfo = document.querySelector('section')
+	const stapEen = document.querySelectorAll(".stap1");
+	const stapTwee = document.querySelectorAll(".stap2");
 
-	formEen.forEach((element) => {
+	stapEen.forEach((element) => {
 		element.classList.add("gesl-form");
-        algInfo.classList.add("gesl-form")
 	});
-	formTwee.forEach((element) => {
+	stapTwee.forEach((element) => {
 		element.classList.remove("gesl-form");
 	});
 });
 
+// MARK: VORIGE VR
+const terugKnop = document.querySelector("section.stap2 button");
 
-// MARK: MAX DATUM 
+terugKnop.addEventListener("click", function () {
+	const stapEen = document.querySelectorAll(".stap1");
+	const stapTwee = document.querySelectorAll(".stap2");
+
+	stapEen.forEach((element) => {
+		element.classList.remove("gesl-form");
+	});
+	stapTwee.forEach((element) => {
+		element.classList.add("gesl-form");
+	});
+});
+
+// MARK: MAX DATUM
 // met dank aan: https://stackoverflow.com/questions/32378590/set-date-input-fields-max-date-to-today
 
-const datumPriks = document.querySelectorAll('input[type="date"]')
+const datumPriks = document.querySelectorAll('input[type="date"]');
 var vandaag = new Date();
 var dag = vandaag.getDate();
 var maand = vandaag.getMonth() + 1; // januari is 0
 var jaar = vandaag.getFullYear();
 
 if (dag < 10) {
-   dag = '0' + dag;
+	dag = "0" + dag;
 }
 
 if (maand) {
-   maand = '0' + maand;
-} 
-    
-vandaag = jaar + '-' + maand + '-' + dag;
+	maand = "0" + maand;
+}
+
+vandaag = jaar + "-" + maand + "-" + dag;
 
 datumPriks.forEach((prik) => {
-    prik.setAttribute("max", vandaag)
-})
+	prik.setAttribute("max", vandaag);
+});

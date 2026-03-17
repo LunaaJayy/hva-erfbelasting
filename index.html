@@ -19,7 +19,7 @@
         <p>Dit is een een project voor studie!</p>
     </header>
     <main>
-        <section>
+        <section class="stap1">
             <h2>Algemene informatie</h2>
             <h3>Welke gegevens hebt u nodig?</h3>
             <ul>
@@ -33,9 +33,13 @@
                 <li>andere overeenkomsten en akten (bijvoorbeeld een akte van verkoop van een woning aan kinderen van de overledene of een akte van schenking)</li>
             </ul>
         </section>
-        <h2 class="form1">Gegevens van de overledene</h2>
-        <p class="form1">vul hier de gegevens in van de overledene</p>
-        <form method="post" class="form1" autocomplete="nope">
+        <section class="stap1">
+            <h2>Stap 1 van 1</h2>
+        </section>
+
+        <h2 class="stap1">Gegevens van de overledene</h2>
+        <p class="stap1">vul hier de gegevens in van de overledene</p>
+        <form method="post" class="stap1" autocomplete="nope">
             <!-- voor alle input types en attributen in de form: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -->
             <fieldset> <!-- 1a -->
                 <legend>Persoonsgegevens van overledene</legend>
@@ -77,7 +81,7 @@
                 </div>
 
                 <label for="1a-4">Bsn overledene</label>
-                <input type="text" name="bsn-overledene" id="1a-4" maxlength="9" pattern="[0-9]{9}" required>
+                <input type="text" name="bsn-overledene" id="1a-4" maxlength="9" pattern="[0-9]{8-9}" required>
                 <div class="error">
                     <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -321,13 +325,13 @@
                 </fieldset>
             </fieldset>
 
-            <fieldset> <!-- 1d -->
+            <fieldset> 
                 <legend>Testament overledene</legend>
 
                 <fieldset>
                     <legend>Had de overledene een testament?</legend>
                     <label class="radio">
-                        <input type="radio" name="testament" class="ja js-ja" required>
+                        <input type="radio" name="testament" class="ja js-ja" required checked>
                         Ja
                     </label>
 
@@ -352,6 +356,7 @@
                 </fieldset>
 
                 <div class="dichtevraag">
+                    <p>Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.</p>
                     <label for="1d-2">Protocolnummer notaris</label>
                     <input type="text" name="protocolnummer" id="1d-2" maxlength="6" pattern="[0-9]{6}"
                         data-required="true">
@@ -445,11 +450,16 @@
             <button type="submit">Volgende</button>
         </form>
 
-        <h2 class="form2 gesl-form">Gegevens van de gemachtigde</h2>
-        <p class="form2 gesl-form">Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of
+        <section class="stap2 gesl-form">
+            <h2>Stap 2 van 2</h2>
+            <button>← Ga terug naar stap 1</button>
+        </section>
+
+        <h2 class="stap2 gesl-form">Gegevens van de gemachtigde</h2>
+        <p class="stap2 gesl-form">Vul de gegevens van de gemachtigde in. De gemachtigde is degene die namens 1 of
             meerdere personen en/of instellingen aangifte doet. Het invullen van een telefoonnummer of e-mailadres is
             niet verplicht, maar wel handig. Dan kunnen wij u makkelijker vragen stellen of uitleg geven.</p>
-        <form method="post" class="form2 gesl-form">
+        <form method="post" class="stap2 gesl-form">
             <fieldset> <!--2a-->
                 <legend>Vul 1 van de 3 in</legend>
 
@@ -1023,12 +1033,14 @@
                 </fieldset>
 
                 <label for="2b-5">Telefoonnummer</label>
+                <p>Niet verplicht</p>
                 <input type="text" name="tel-nummer" id="2b-5" minlength="9" maxlength="12">
 
                 <label for="2b-6">E-mailadres</label>
+                <p>Niet verplicht</p>
                 <input type="email" name="mail" id="2b-6">
             </fieldset>
-            <button type="submit">Volgende</button>
+            <button type="submit">Verzenden</button>
         </form>
     </main>
     <script src="js/script.js"></script>
