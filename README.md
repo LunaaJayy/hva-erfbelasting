@@ -161,6 +161,21 @@ Ik heb over de input type="file" geleerd, over startViewTransition (ook al heb i
 **Wat ga ik morgen doen?**\
 Als laatste informatie wil ik nog kijken waar extra informatie toegevoegd moet worden, wil ik een terugknop toevoegen en wil ik wat velden korter maken.
 
+## Week 4
+### Dag 8 - Dinsdag 17 maart met Sela
+
+**Wat heb ik gedaan**\
+Ik heb ViewTransition toegevoegd, de stijling nog verder aangepast (zodat je ziet wat niet verplicht is en er is wat meer informatie), en toegevoegd bij welke stap je bent.
+
+**Hoe lang heeft dit geduurd**\
+Dit duurde ongeveer een halve dag, dus ongeveer 2,5 uur.
+
+**Wat heb ik geleerd**\
+Ik heb meer geleerd over de scroll/view transitions
+
+**Wat ga ik morgen doen**\
+Ik wil donderdag nog de laatste puntjes op de i doen, zoals op verschillende plekken wat meer informatie. 
+
 ## Bronnen
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
 - https://chatgpt.com/share/69a6d76a-2e24-8012-8be7-1e7a783916b5
