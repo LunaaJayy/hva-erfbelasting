@@ -331,7 +331,7 @@
                 <fieldset>
                     <legend>Had de overledene een testament?</legend>
                     <label class="radio">
-                        <input type="radio" name="testament" class="ja js-ja" required checked>
+                        <input type="radio" name="testament" class="ja js-ja" required>
                         Ja
                     </label>
 
@@ -357,6 +357,21 @@
 
                 <div class="dichtevraag">
                     <p>Vul de gegevens in van de notaris die het testament heeft opgemaakt en de datum van het testament.</p>
+                    <details>
+                        <summary>
+                            Protocolnummer van een notaris in functie
+                            <!-- van de ns website: -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6.707" viewBox="0 0 12 6.707"><path d="M0,.5C0,.372.049.244.146.146.342-.049.658-.049.854.146l5.146,5.146L11.146.146c.195-.195.512-.195.707,0s.195.512,0,.707l-5.854,5.854L.146.854c-.098-.098-.146-.226-.146-.354Z"></path></svg>
+                        </summary>
+                        Het nummer van een notaris in functie vindt u op <a href="https://registernotariaat.nl/">registernotariaat.nl</a> in het <i>Register notariaat</i>. Het actieve protocolnummer is dat waar geen 'Datum eind' bij staat. Hebt u ook een adres nodig? Ga dan naar <a href="https://www.notaris.nl">notaris.nl</a> en vul de plaatsnaam in bij 'Zoek een notaris'. U ziet dan van elk kantoor in de regio het adres.
+                    </details>
+                    <details>
+                        <summary>
+                            Protocolnummer van een notaris die gestopt is
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6.707" viewBox="0 0 12 6.707"><path d="M0,.5C0,.372.049.244.146.146.342-.049.658-.049.854.146l5.146,5.146L11.146.146c.195-.195.512-.195.707,0s.195.512,0,.707l-5.854,5.854L.146.854c-.098-.098-.146-.226-.146-.354Z"></path></svg>
+                        </summary>
+                        De opvolger van een notaris die gestopt is, vindt u op <a href="https://www.notaris.nl">notaris.nl</a> in het opvolgersarchief. Daar ziet u een naam, kantoor en adres. Die gegevens gebruikt u vervolgens om het protocolnummer te zoeken op <a href="https://registernotariaat.nl/">registernotariaat.nl</a> in het <i>Register notariaat</i>. Staan er meerdere nummers en komt u er niet uit? Neem dan contact op met het notariskantoor.
+                    </details>
                     <label for="1d-2">Protocolnummer notaris</label>
                     <input type="text" name="protocolnummer" id="1d-2" maxlength="6" pattern="[0-9]{6}"
                         data-required="true">

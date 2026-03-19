@@ -59,6 +59,10 @@
 	font-style: italic;
 }
 
+i {
+	font-style: italic;
+}
+
 body {
 	margin: 0;
 	font-family: "NS Sans", "Roboto", sans-serif;
@@ -151,7 +155,9 @@ section {
             }
         }
     }
-    a {
+}
+
+a {
         text-decoration: none;
         color: var(--focus);
         border-bottom: .125rem var(--bg-color-main) solid;
@@ -161,7 +167,6 @@ section {
             border-color: var(--focus);
         }
     }
-}
 
 
 section:nth-of-type(2), section:nth-of-type(3) {
@@ -239,6 +244,10 @@ form > fieldset > legend {
 
 label {
 	margin: 1rem 0 0.4rem;
+	&:has(input[type='radio']){
+		margin-left: .2rem;
+	}
+
 	&:has(input[type='radio']:checked) {
 		color: var(--display-blue);
 	}
@@ -250,6 +259,41 @@ form:not(div p) p {
 	font-style: normal;
 	transform: unset;
 	margin: 0;
+}
+
+.dichtevraag > p {
+	margin-top: 1rem;
+}
+
+/* mede dankzij: https://dev.to/ilham-bouktir/creative-ways-to-style-the-html-details-tag-3c5k */
+details {
+	margin: 0 1.5rem 0 .5rem;
+	color: var(--help-text);
+	font-size: .875rem;
+	summary {
+		list-style: none;
+		margin: .5rem -1.5rem 0 -.5rem;
+		color: var(--focus);
+		font-weight: bold;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-right: 2rem;
+
+		svg {
+			fill: var(--focus);
+			transition: transform .25s linear;
+		}
+	}
+
+	&[open] summary{
+		color: var(--display-blue);
+		
+		svg	{
+			transform: rotateX(180deg);
+		}
+	}
 }
 
 input {
@@ -409,9 +453,9 @@ fieldset:has(.bl:checked) .adresbl {
 /* --------------------------------- MARK: VOLGEND VR
  */
 
-/* .gesl-form {
+.gesl-form {
     display: none;
-} */
+}
 
 /* --------------------------------- MARK: VALIDITY
  */

@@ -180,3 +180,4 @@ Ik wil donderdag nog de laatste puntjes op de i doen, zoals op verschillende ple
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
 - https://chatgpt.com/share/69a6d76a-2e24-8012-8be7-1e7a783916b5
 - https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::file-selector-button
+- https://dev.to/ilham-bouktir/creative-ways-to-style-the-html-details-tag-3c5k
