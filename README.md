@@ -33,12 +33,12 @@ Ik wil voor de volgende keer eigenlijk mijn styling afhebben en de Javascript om
 ## Reflectie week 1
 In deze week heb ik veel meer bereikt dan ik had verwacht. Ik heb sowieso progressie gemaakt met mijn leerdoel: 'sneller / efficiënter beginnen aan coderen'. Het feit dat we meteen moesten beginnen aan het schrijven van de html hielp daar ontzettend mee. Het is fijn dat je dan al wat code hebt staan, zodat het minder intimderend is om te beginnen met schrijven. Na dag 1 had ik al een groot deel van de html staan. Dit neem ik zeker mee naar mijn volgende projecten / opdrachten. 
 
-![dag1 html resultaat](/readme-images/dag1-html.png)
+<img src="/readme-images/dag1-html.png" alt="dag 1 html resultaat" width="500px">
 
 Omdat we met de huisstijl van de NS moesten werken was het ontwerp ook minder lastig. Ik kon vrij snel met de css beginnen en had na dag 2 ook de rest van de html en een grote basis van de css al afgemaakt! Tijdens het schrijven van de css twijfelde ik wel tussen twee versies:
 
-![versie 1 van css](/readme-images/dag2-versie1.jpeg)
-![versie 2 van css](/readme-images/dag2-versie2.jpeg)
+<img src="/readme-images/dag2-versie1.jpeg" alt="versie 1 van css" width="500px">
+<img src="/readme-images/dag2-versie2.jpeg" alt="versie 2 van css" width="500px">
 
 Echter, na het sparren met klasgenoten kon ik vrij snel een keuze maken voor de tweede versie, omdat dat ook meer bij de NS past. 
 
@@ -85,18 +85,19 @@ Volgende keer ga ik de puntjes op de i zetten van het toevoegen van required, en
 ## Reflectie week 2
 Na de vakantie duurde het even voordat ik volledig was opgestart om weer écht te beginnen aan Browser Tech. Gelukkig had ik wel al opgeschreven waaraan ik wilde werken, dus kon ik lekker daarmee aan de slag gaan. Ik merk nog steeds dat het het beste voor mij werkt als ik eerst in mijn boekje wat dingen schets, voordat ik via de website zelf ga schetsen. Ik vind het fijn om alvast een idee in mijn hoofd te hebben. Hiermee begon ik dan ook op dag 3.
 
-![dag3 schets](/readme-images/dag3-uitkapschets.jpeg)
+<img src="/readme-images/dag3-uitkapschets.jpeg" alt="dag 3 schets" width="500px">
 
 Door deze schets had ik in mijn hoofd hoe ik de css moest aanpakken om de vragen uit te klappen, en vervolgens bleken het maar een paar regels css te zijn! Weer wat geleerd!
 
 De volgende dag was ik vooral bezig met ervoor zorgen dat het attribuut required werd toegevoegd als er vragen werden uitgeklapt. Dit moest met JavaScript, en ik wist niet waar ik moest beginnen. Ik op internet via MDN en andere forums proberen uit te zoeken hoe ik het nou zou aanpakken. Vervolgens heb ik na een uur Chat maar even gevraagd ter inspiratie. Dit hielp mij om op gang te komen en zo kon ik verder uitschetsen hoe ik het wilde aanpakken. 
 
-![uitzoeken JavaScripy dag 4](/readme-images/dag4-required-uitzoek.jpeg)
-![uitzoeken JavaScripy dag 4](/readme-images/dag4-required-uitzoek2.jpeg)
+<img src="/readme-images/dag4-required-uitzoek.jpeg" alt="Uitzoeken Javascript dag 4" width="500px">
+<img src="/readme-images/dag4-required-uitzoek2.jpeg" alt="Uitzoeken Javascript dag 4" width="500px">
 
 Om ervoor te zorgen dat ik de volgende keer als ik aan Browser Tech zou zitten weer snel op gang kon komen (na 2 dagen aan CSS te hebben gezeten), heb ik in mijn boekje opgeschreven waar ik tegenaan liep en wat ik daaraan kon doen.
 
 ![plan voor dag 5](/readme-images/dag4-voordag5.jpeg)
+<img src="/readme-images/dag4-voordag5.jpeg" alt="plan voor dag 5" width="500px">
 
 Het voortgangsgesprek ging goed! Ik heb nieuwe inzichten gekregen in wat ik nog verder kan doen en heb ook meer stof tot nadenken gehad over bepaalde keuzes die ik ga maken in mijn ontwerp, zoals bijvoorbeeld het selecteren van de datum.
 
@@ -137,11 +138,11 @@ De JavaScript validatie lijkt me nog wel lastig, ik ga daar in de laatste week a
 
 Omdat ik maandag vooral met de stijling bezig was had ik niet veel (vrijwel niks) geschetst in mijn boekje. Ik ging vooral 'schetsen' aan de hand van css: dingen proberen en die vervolgens weer aanpassen. Dit schetsen met css gaat mij in de toekomst helpen met mijn leerdoel 'sneler/efficienter beginnen aan projecten'. 
 
-![dag 5 schets, wat niets is](/readme-images/dag5(vooral6).jpeg)
+<img src="/readme-images/dag5(vooral6).jpeg" alt="dag 5 schets, wat niets is" width="500px">
 
 In deze schetsen is vooral dag 6 te zien, waarbij ik vooral de css validatie heb geregeld. Ook zie je de schets van hoe ik de 'kies 1 van 3' vraag wilde uitwerken. 
 
-![dag 6 schets](/readme-images/dag6.jpeg)
+<img src="/readme-images/dag6.jpeg" alt="dag 6 schets" width="500px">
 
 Ik vond de Weekly Nerd erg interessant, het past perfect bij dit vak. Echter, ik vond het wel jammer dat deze weekly nerd in de 'laatste' week kwam in plaats van aan het begin. Nu zijn er namelijk nog erg veel puntjes op de i die ik aankomende week wil fixen, en weet ik niet of ik veel tijd heb om de andere dingen die ze hebben verteld toe te passen. 
 
@@ -161,9 +162,8 @@ Ik heb over de input type="file" geleerd, over startViewTransition (ook al heb i
 **Wat ga ik morgen doen?**\
 Als laatste informatie wil ik nog kijken waar extra informatie toegevoegd moet worden, wil ik een terugknop toevoegen en wil ik wat velden korter maken.
 
-## Week 4
-### Dag 8 - Dinsdag 17 maart met Sela
 
+### Dag 8 - Dinsdag 17 maart met Sela
 **Wat heb ik gedaan**\
 Ik heb ViewTransition toegevoegd, de stijling nog verder aangepast (zodat je ziet wat niet verplicht is en er is wat meer informatie), en toegevoegd bij welke stap je bent.
 
@@ -175,6 +175,42 @@ Ik heb meer geleerd over de scroll/view transitions
 
 **Wat ga ik morgen doen**\
 Ik wil donderdag nog de laatste puntjes op de i doen, zoals op verschillende plekken wat meer informatie. 
+
+### Dag 9 - Donderdag 19 maart met mezelf
+**Wat heb ik gedaan**\
+Ik heb een paar aanpassingen gedaan nog aan mijn werk, een paar puntjes op de i. Verder heb ik nog een <details> toegevoegd voor wat extra informatie
+
+**Hoe lang heeft dit geduurd**\
+Dit heeft me 2,5 uur gekost.
+
+**Wat heb ik geleerd**\
+Ik heb wat geleerd over de stijling van details, maar ook meer over ::after en ::before (ook al heb ik het niet gebruikt)
+
+**Wat ga ik morgen doen**\
+Het eindgesprek!
+
+## Reflectie week 4
+De puntjes zijn op de i gezet, de website is af! Natuurlijk had ik nog wat extra dingen kunnen (en willen) doen, maar dat was gelukt als we langer de tijd hadden gehad. Ik had bijvoorbeeld nog wat Javascript validatie willen doen en meer met accessibility.
+
+Ik ben erg blij met hoe mijn website eruit ziet en hoe hij werkt! 
+
+Het meest uitdagende vond ik de JavaScript, maar vooral het uitvogelen hoe je iets het best kan laten zien aan de gebruiker. De weekly nerd hielp daar erg bij, daardoor heb ik bepaalde keuzes gemaakt zoals de volgende en terugknop niet naast elkaar te zetten, maar de terugknop boven links, en de volgende knop helemaal onderaan (net zo breed als de form). Ook heb ik expliciet bij de mail en telefoonnumer gezet dat het niet verplicht is, in plaats van overal neer te zetten dat het wel verplicht is.
+
+<img src="/readme-images/eind-nietverplicht.png" alt="" width="500px">
+
+<img src="/readme-images/eind-terugknop.png" alt="" width="500px">
+
+De JavaScript was uitdagend op een 'puzzelende' manier. Dit is de eerste keer dat ik (bijna) helemaal zelf JavaScript heb geschreven. Vaak moest ik hier en daar nog spieken, maar aan de hand van mijn boekje kon ik de JavaScript uitschrijven en zo het aan de hand van code schrijven. Ik ben erg trots op mezelf!
+
+Ik heb gekozen om de 'date picker' zo te houden omdat het, uit eigen ervaring en die van anderen, makkelijker is om de datum in één keer door te typen dan bijvoorbeeld zelf de '-' of '/' te moeten schrijven of elke keer op tab te moeten drukken om door te gaan naar het volgende vakje.
+
+<img src="/readme-images/eind-datepicker.png" alt="de datum prikker" width="500px">
+
+Verder heb ik gekozen om de extra informatie te laten zien door middel van details. Zodat je niet nog extra op een 'i' hoeft te drukken, waarbij er dan een soort popup in het scherm komt, maar je in de form zelf meteen de informatie kan zien. Ook heb ik de cursor een 'pointer' gemaakt.
+
+<img src="/readme-images/eind-details.png" alt="de details" width="500px">
+
+Ik weet nu dat ik beter ga zijn in het maken van forms dan 4 weken geleden. Daarnaast zie ik nu ook in hoe belangrijk en moeilijk het maken van een goede form is! Er zijn onwijs veel dingen waar je aan moet denken, zoals (de juiste) validatie en accessibility. Ik ben nog lang niet uitgeleerd!
 
 ## Bronnen
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form

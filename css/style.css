@@ -276,6 +276,8 @@ details {
 		color: var(--focus);
 		font-weight: bold;
 
+		cursor: pointer;
+
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
