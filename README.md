@@ -178,7 +178,7 @@ Ik wil donderdag nog de laatste puntjes op de i doen, zoals op verschillende ple
 
 ### Dag 9 - Donderdag 19 maart met mezelf
 **Wat heb ik gedaan**\
-Ik heb een paar aanpassingen gedaan nog aan mijn werk, een paar puntjes op de i. Verder heb ik nog een <details> toegevoegd voor wat extra informatie
+Ik heb een paar aanpassingen gedaan nog aan mijn werk, een paar puntjes op de i. Verder heb ik nog een 'details' toegevoegd voor wat extra informatie
 
 **Hoe lang heeft dit geduurd**\
 Dit heeft me 2,5 uur gekost.
